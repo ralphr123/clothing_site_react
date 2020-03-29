@@ -1,38 +1,124 @@
+/* General */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 .App {
-  text-align: center;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::selection {
+  /* background: #ffb7b7; */
+  background: rgba(92, 87, 78, 0.5)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex {
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.black {
+  background: linear-gradient(to bottom, #060606 0%, #070707 50%, #040405 100%);;
+  width: 100%;
+  height: 94vh;
+  margin: 0;
+}
+
+.particles {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 94vh;
+  position: absolute;
+  z-index: -1;
+}
+
+/* ImageMain */
+.main-image {
+  height: 94vh;
+  /* width: 34.8vw; */
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to bottom, rgba(255, 0, 102, 1) 0%, rgba(204, 0, 0, 1) 100%);
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-container {
+  margin: 0;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.logo {
+  margin-top: 0;
+  margin-right: 10px;
+  font-size: 1.8vw;
+  color: white;
+  font-family: 'Unica One', cursive;
+}
+
+.register-container {
+  margin: 0;
+  height: 6vh;
+  width: 8vh;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.register {
+  margin-top: 0;
+  margin-right: 12.5px;
+  margin-left: 12.5px;
+  font-size: 1.6vh;
+}
+
+.register-container:hover {
+  background: rgba(51, 102, 204, 0.1);
+}
+
+/* Sidebar */
+
+.sidebar {
+  margin: 0;
+  padding-right: 40px;
+  width: 100%;
+  height: 94vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-end;  
+}
+
+.list-item {
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 4vw;
   color: white;
+  cursor: pointer;
+  transition: font-size 0.2s;
+  transition-timing-function: ease-out;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-item:hover {
+  font-size: 4.5vw;
+  color: #ff0066;
 }
