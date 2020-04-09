@@ -22,10 +22,27 @@ html {
   display: flex;
 }
 
+.full-size {
+  width: 100%;
+  height: 100%;
+}
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;  
+}
+
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.center-vertical {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .black {
@@ -49,54 +66,68 @@ html {
   height: 100vh;
 }
 
+.header {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 8vh;
+  margin-top: 100px;
+}
+
+
+.white {
+  color: white;
+}
+
+.dark {
+  color: black;
+  border-bottom: 2px solid black;
+  background: white;
+}
+
 /* ImageMain */
 .main-image {
-  height: 100vh;
+  width: calc(18em + 18vw);
   position: fixed;
-  /* width: 34.8vw; */
+  bottom: 0;
   margin: 0;
 }
 
 /* Navbar */
 .navbar-container {
-  margin: 0;
-  margin-top: 15px;
-  height: 6vh;
-  width: 100%;
   position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar {
+  margin: 0;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
 }
 
 .logo-container {
-  margin-bottom: 6.8vh;
-  width: 9vw;
+  margin-right: calc(0.82em + 0.22vw);
+  /* padding-left: calc(0.82em + 0.22vw); */
   position: relative;
-  color: white;
   font-family: 'Unica One', cursive;
   z-index: 999;
 }
 
 .logo {
-  position: fixed;
-  font-size: 6vh;
+  font-size: calc(1.5em + 1.5vw);
 }
 
 .register-container {
   margin: 0;
   position: relative;
   height: 6vh;
-  width: 5vw;
+  width: calc(3em + 3vw);
   z-index: 999;
 }
 
 .register {
   margin-top: 4px;
-  margin-bottom: 0;
-  position: fixed;
-  padding: 0;
-  margin-right: 12.5px;
-  margin-left: 12.5px;
-  font-size: 2.0vh;
-  color: white;
+  font-size: calc(0.82em + 0.22vw);
   cursor: pointer;
   z-index: 999;
 }
@@ -122,8 +153,6 @@ html {
 }
 
 .search-icon {
-  color: white;
-  position: fixed;
   cursor: pointer;
   z-index: 999;
 }
@@ -147,7 +176,7 @@ html {
   padding-top: 6px;
   padding-bottom: 6px;
   font-family: 'Quicksand', sans-serif;
-  font-size: 4vw;
+  font-size: calc(2.3em + 2.3vw);
   color: white;
   cursor: pointer;
   transition: font-size 0.2s;
@@ -155,7 +184,7 @@ html {
 }
 
 .list-item:hover {
-  font-size: 4.5vw;
+  font-size: calc(2.45em + 2.45vw);
   color: #ff0066;
 }
 
@@ -164,4 +193,77 @@ html {
   background: white;
   height: 100vh;
   z-index: -1;
+  flex-direction: column;
+  
 }
+
+/* Product */
+.product-container {
+  width: 25%;
+  position: relative;
+  transition: transform .15s ease-in-out;
+}
+
+.product-container:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.products-container {
+  margin-top: 50px;
+  padding: 0;
+  height: 50vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.product {
+  width: 80%;
+}
+
+.product-description {
+  position: absolute;
+  margin-left: 10px;
+  color: white;
+  font-size: small;
+}
+
+.product-description-container {
+  /* background: rgba(217, 180, 207, 0.8); */
+  /* background: rgba(184, 169, 180, 0.8); */
+  background: rgba(163, 11, 123, 0.7);
+  width: 80%;
+  height: 40px;
+  position: absolute;
+}
+
+.product-price-container {
+  /* background: rgba(74, 73, 77, 0.8); */
+  background: rgba(163, 11, 123, 0.7);
+  width: 120px;
+  height: 70px !important;
+  right: 13%;
+  top: 82%;
+  height: 30px;
+  position: absolute;
+}
+
+.product-price {
+  font-size: xx-large;
+  color: white;
+}
+
+@media screen and (max-width: 850px) {
+  .product-container {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-container {
+    flex: 100%;
+    max-width: 100%;
+  }
+} 

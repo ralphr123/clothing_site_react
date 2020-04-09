@@ -12,25 +12,33 @@ import Particles from 'react-particles-js';
 const Home = () => {
     const [currentScrollHeight, setCurrentScrollHeight] = useState<number>(0);
     useEffect(() => {
-        window.onscroll = () => {
-            const newScrollHeight = Math.ceil(window.scrollY / 50) * 50;
-            if (currentScrollHeight != newScrollHeight) {
-                setCurrentScrollHeight(window.scrollY);
-            }
+        window.onscroll = () => { // Not responsive, must fix
+            requestAnimationFrame(() => {
+                setCurrentScrollHeight(window.pageYOffset);
+            });
         }
     });
 
-    const opacity = Math.min(100 / currentScrollHeight, 1);
+    const opacity = Math.min(100 / window.pageYOffset, 1);
+
+    const handleNavBarColor = (): string => {
+        if (currentScrollHeight < window.outerHeight*0.8) return "white"; // Not responsive, must fix
+        if (currentScrollHeight > window.outerHeight*0.8) return "dark ";// Not responsive, must fix
+
+        return "";
+    }
 
     return (
         <div>
             <div className="relative">
                 <FadeIn>
-                    <NavBar />
+                    <NavBar className={handleNavBarColor()} />
+                    {/* <h3 style={{ position: "fixed", color: (currentScrollHeight < 300 ? "white" : "black"), marginTop: 100, marginLeft: 100 }}>{`Percentage scrolled: ${currentScrollHeight}%.`}</h3> 
+                    <h3 style={{ position: "fixed", color: (currentScrollHeight < 300 ? "white" : "black"), marginTop: 150, marginLeft: 200 }}>{`Percentage scrolled: ${window.outerHeight}%.`}</h3>  */}
                     <div className="flex">
                         {currentScrollHeight < 250 ? (<ImageMain style={{ opacity }} />) : null}
                         <Particles className="black particles" params={(new Bubbles()).params} />
-                        {currentScrollHeight < 650 ? (<SideBar className="sidebar"/>) : null}
+                        {currentScrollHeight < window.screen.height*0.5 ? (<SideBar className="sidebar"/>) : null}
                     </div>
                 </FadeIn>
             </div>
@@ -40,8 +48,8 @@ const Home = () => {
 }
 /* 
     1. Front Page
-    2. The Stories
-    3. New Arrivals
+    2. New Arrivals
+    3. The Stories
     4. Work for us
 */
 export default Home;
