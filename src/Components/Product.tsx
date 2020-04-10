@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 interface ProductProps {
     src: string;
     description: string;
-    price?: number;
+    price: number;
 }
 
 const Product: React.FC<ProductProps> = (props) => {
@@ -16,14 +16,16 @@ const Product: React.FC<ProductProps> = (props) => {
     return (
         <div onMouseEnter={toggleHover} onMouseLeave={toggleHover} className="product-container center-horizontal">
             <img className="product" src={props.src} alt={props.description} />  
-
+            {/* <div className="expand-container center">
+                <span className="expand" >Expand</span>
+            </div> */}
             {hover ? (
                 <>
-                    <div className="product-description-container center-vertical">
-                        <span className="product-description" >{props.description}</span>
+                    <div className="product-description center-vertical">
+                        <span>{props.description}</span>
                     </div>
-                    <div className="product-price-container center">
-                        <span className="product-price" >{`$ ${props.price}`}</span>
+                    <div className="product-price center">
+                        <span>{`$ ${props.price}`}</span>
                     </div>
                 </>
             ) : null}

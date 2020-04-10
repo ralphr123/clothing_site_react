@@ -45,6 +45,11 @@ html {
   align-items: center;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 .black {
   background: black;
   width: 100%;
@@ -190,32 +195,31 @@ html {
 
 /* New Arrivals */
 .new-arrivals {
-  background: white;
-  height: 100vh;
-  z-index: -1;
+  height: auto;
+  min-height: 100vh;
   flex-direction: column;
-  
 }
 
 /* Product */
 .product-container {
   width: 25%;
-  position: relative;
   transition: transform .15s ease-in-out;
 }
 
 .product-container:hover {
   cursor: pointer;
   transform: scale(1.05);
+  /* background-color: rgba(255, 255, 255, 0.4); */
 }
 
 .products-container {
   margin-top: 50px;
   padding: 0;
-  height: 50vh;
+  height: auto;
+  min-height: 50vh;
   width: 100vw;
   flex-wrap: wrap;
-  /* flex-direction: column; */
+  position: relative;
 }
 
 .product {
@@ -223,22 +227,18 @@ html {
 }
 
 .product-description {
-  position: absolute;
-  margin-left: 10px;
-  color: white;
-  font-size: small;
-}
-
-.product-description-container {
   /* background: rgba(217, 180, 207, 0.8); */
   /* background: rgba(184, 169, 180, 0.8); */
   background: rgba(163, 11, 123, 0.7);
   width: 80%;
   height: 40px;
   position: absolute;
+  padding-left: 10px;
+  color: white;
+  font-size: small;
 }
 
-.product-price-container {
+.product-price {
   /* background: rgba(74, 73, 77, 0.8); */
   background: rgba(163, 11, 123, 0.7);
   width: 120px;
@@ -247,11 +247,18 @@ html {
   top: 82%;
   height: 30px;
   position: absolute;
-}
-
-.product-price {
   font-size: xx-large;
   color: white;
+}
+
+.expand-container {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid black;
+  position: absolute;
+  font-size: x-large;
+  top: 45%;
+  height: 40px;
+  width: 120px;
 }
 
 @media screen and (max-width: 850px) {
@@ -267,3 +274,93 @@ html {
     max-width: 100%;
   }
 } 
+
+/* Team Member Grid */
+.team-member-grid {
+  height: 100vh;
+  width: 100vw;
+  background: #f2f2f2;
+  display: flex;
+  clear: both;
+  flex-wrap: wrap;
+}
+
+.team-members {
+  height: 100vh;
+  flex: 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team {
+  height: 100vh;
+  /* width: 50vw; */
+  flex: 2;
+  background: black;
+}
+
+@media screen and (max-width: 800px) {
+  .tester{
+    flex: 100%;
+    max-width: 100%;
+  }
+} 
+
+/* Team Member */
+.team-member {
+  height:  calc(12em + 4vw);
+  width:  calc(20em + 4vw);
+  margin: 5px;
+  /* background: green; */
+}
+
+.team-member-description {
+  width: calc(11em + 0vw);
+  /* background: blueviolet; */
+  min-width: 150px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.team-member-image {
+  max-height: 100%;
+  height: calc(11em + 3vw);
+  margin-right: 15px;
+}
+
+.team-member-name {
+  font-size: large;
+  font-weight: 500;
+  padding-left: 5px;
+  width: min-content;
+  min-width: 150px;
+}
+
+.team-member-job {
+  margin-bottom: 10px;
+  font-weight: 400;
+  padding-left: 5px;
+  width: min-content;
+  min-width: 150px;
+}
+
+.team-member-link {
+  cursor: pointer;
+  width: min-content;
+  min-width: 150px;
+  height: auto;
+  min-height: 25px;
+  padding-left: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.team-member-link:hover {
+  background: rgba(209, 49, 182, 0.7);
+}
+
+.team {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 8vh;
+  margin-top: 80px;
+  width: 100%;
+}
