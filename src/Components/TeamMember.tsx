@@ -11,21 +11,21 @@ interface TeamMemberProps {
 const TeamMember: React.FC<TeamMemberProps> = (props) => {
     return (
         <div className="team-member flex center">
-                <img src={props.src} alt="Team Member" className="team-member-image"/><br/>
-                <div className="team-description-container">
-                    <div className="team-member-name">                        
-                        <span >{props.name}</span><br/>
-                    </div>
-                    <div className="team-member-job">
-                        <span >{props.jobTitle}</span><br />
-                    </div>
-                    <div className="team-member-description">                        
-                        <span>{props.description}</span><br/>
-                    </div>
-                    <div className="team-member-link center-vertical">                        
-                        <a onClick={() => props.onClick} >More</a>
-                    </div>
+            <img src={props.src} alt="Team Member" className="team-member-image"/><br/>
+            <div className="team-description-container">
+                <div className="team-member-name">                        
+                    <span >{props.name}</span><br/>
                 </div>
+                <div className="team-member-job">
+                    <span >{props.jobTitle}</span><br />
+                </div>
+                <div className="team-member-description">
+                    <span>{props.description}</span><br/>
+                </div>
+                <div className="team-member-link center-vertical">                        
+                    <a onClick={() => props.onClick} >More</a>
+                </div>
+            </div>
         </div>
     )
 }

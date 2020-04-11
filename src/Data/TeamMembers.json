@@ -1,66 +1,50 @@
 [
     {
         "id": 0,
-        "name": "",
-        "jobTitle": "",
-        "shortDescription": "",
+        "name": "Scooby Doo",
+        "jobTitle": "Chief Executive Officer",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": ""
+        "src": "https://thumbs.worthpoint.com/zoom/images3/164/0415/10/art-hanna-barbera-pebbles-flintstone_164_e82e1ad4eeb13568abf72c98bcb9c8db.jpg"
     },
     {
         "id": 1,
-        "name": "",
-        "jobTitle": "",
-        "shortDescription": "",
+        "name": "Claude Debussy",
+        "jobTitle": "Senior Vice President, Engineering",
+        "shortDescription": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": ""
+        "src": "https://i.ibb.co/tQzhZJs/Claude-Debussy-atelier-Nadar.jpg"
     },
     {
         "id": 2,
-        "name": "",
-        "jobTitle": "",
-        "shortDescription": "",
+        "name": "Doug",
+        "jobTitle": "Penguin",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": ""
+        "src": "https://upload.wikimedia.org/wikipedia/commons/0/08/South_Shetland-2016-Deception_Island%E2%80%93Chinstrap_penguin_%28Pygoscelis_antarctica%29_04.jpg"
     },
     {
         "id": 3,
-        "name": "",
-        "jobTitle": "",
-        "shortDescription": "",
+        "name": "Antoine Grandeur",
+        "jobTitle": "Chief Creative Officer",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": ""
+        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg"
     },
     {
         "id": 4,
-        "name": "",
-        "jobTitle": "",
-        "shortDescription": "",
+        "name": "Eugene",
+        "jobTitle": "Other Penguin",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": ""
+        "src": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/king-penguin-portrait-falkland-islands-south-america-yefim-bam.jpg"
     },
     {
         "id": 5,
-        "name": "",
-        "jobTitle": "",
-        "shortDescription": "",
+        "name": "Amanda Hawking",
+        "jobTitle": "Vice President, Customer Operations",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua...",
         "fullDescription": "",
-        "src": ""
-    },
-    {
-        "id": 6,
-        "name": "",
-        "jobTitle": "",
-        "shortDescription": "",
-        "fullDescription": "",
-        "src": ""
-    },
-    {
-        "id": 7,
-        "name": "",
-        "jobTitle": "",
-        "shortDescription": "",
-        "fullDescription": "",
-        "src": ""
+        "src": "https://i.pinimg.com/originals/25/48/31/25483183a26a96adcc2b5a4002eda6ca.jpg"
     }
 ]

@@ -8,3 +8,47 @@ also known as leather jackets or the biker jacket. Which color of leather would 
 match an outfit of any design, so if you like to go all-out with colors it might be a good way to offset that. A brown leather jacket has 
 a warmer, vintage feel harkening back to Amelia Earheart. For the less conventional, there are also white leather jacket and red leather
 jacket options.
+
+
+<TeamMember 
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg"
+                        name="Antoine Grandeur"
+                        jobTitle="Chief Creative Officer"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+                        onClick={() => handleOnClickTeamMember(3)}
+                    />
+                    <TeamMember 
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg"
+                        name="Antoine Grandeur"
+                        jobTitle="Chief Creative Officer"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+                        onClick={() => handleOnClickTeamMember(3)}
+                    />
+                    <TeamMember 
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg"
+                        name="Antoine Grandeur"
+                        jobTitle="Chief Creative Officer"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+                        onClick={() => handleOnClickTeamMember(3)}
+                    />
+                    <TeamMember 
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg"
+                        name="Antoine Grandeur"
+                        jobTitle="Chief Creative Officer"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+                        onClick={() => handleOnClickTeamMember(3)}
+                    />
+                    <TeamMember 
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg"
+                        name="Antoine Grandeur"
+                        jobTitle="Chief Creative Officer"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+                        onClick={() => handleOnClickTeamMember(3)}
+                    />
+                    <TeamMember 
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg"
+                        name="Antoine Grandeur"
+                        jobTitle="Chief Creative Officer"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+                        onClick={() => handleOnClickTeamMember(3)}
+                    />

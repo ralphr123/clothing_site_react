@@ -73,8 +73,8 @@ html {
 
 .header {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 8vh;
-  margin-top: 100px;
+  font-size: calc(3em + 1vw);
+  margin-top: 80px;
 }
 
 
@@ -204,6 +204,7 @@ html {
 .product-container {
   width: 25%;
   transition: transform .15s ease-in-out;
+  margin-bottom: 10px;
 }
 
 .product-container:hover {
@@ -214,6 +215,7 @@ html {
 
 .products-container {
   margin-top: 50px;
+  margin-bottom: 20px;
   padding: 0;
   height: auto;
   min-height: 50vh;
@@ -277,32 +279,89 @@ html {
 
 /* Team Member Grid */
 .team-member-grid {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   width: 100vw;
   background: #f2f2f2;
   display: flex;
-  clear: both;
   flex-wrap: wrap;
-}
-
-.team-members {
-  height: 100vh;
-  flex: 3;
-  overflow: hidden;
   position: relative;
 }
 
-.our-team {
-  height: 100vh;
-  /* width: 50vw; */
-  flex: 2;
-  background: black;
+.team-members {
+  height: min-content;
+  min-height: 60vh;
+  flex: 18;
+  margin-bottom: 25px;
 }
 
+.grid {
+  flex-wrap: wrap;
+  height: min-content;
+  min-height: 60vh;
+}
+
+.team {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: calc(2.25em + 1vw);
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.our-team {
+  min-height: 100vh;
+  flex: 7;
+  background: black;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+
+.our-team-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: calc(2em + 1vw);
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+  color: white;
+}
+
+.our-team-descr {
+  color: white;
+  width: 80%;
+}
+
+.our-team-descr-cont {
+  width: 100%
+}
+
+@media screen and (max-width: 8500px) {
+  .team-member {
+    flex: 30%;
+    max-width: 40%;
+  }
+} 
+
 @media screen and (max-width: 800px) {
-  .tester{
+  .team-member {
+    flex: 50%;
+    max-width: 50%;
+  }
+} 
+
+@media screen and (max-width: 1100px) {
+  .mobile{
     flex: 100%;
     max-width: 100%;
+  }
+  .our-team {
+    min-height: min-content;
+    height: min-content;
+    padding-bottom: 50px;
+  }
+
+  .team-member {
+    margin-bottom: 35px !important;
   }
 } 
 
@@ -311,15 +370,15 @@ html {
   height:  calc(12em + 4vw);
   width:  calc(20em + 4vw);
   margin: 5px;
-  /* background: green; */
+  /* background: slateblue; */
 }
 
 .team-member-description {
-  width: calc(11em + 0vw);
-  /* background: blueviolet; */
+  width: 10em;
   min-width: 150px;
   margin-bottom: 5px;
   padding-left: 5px;
+  font-weight: 300;
 }
 
 .team-member-image {
@@ -337,11 +396,11 @@ html {
 }
 
 .team-member-job {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-weight: 400;
   padding-left: 5px;
   width: min-content;
-  min-width: 150px;
+  min-width: 160px;
 }
 
 .team-member-link {
@@ -358,9 +417,3 @@ html {
   background: rgba(209, 49, 182, 0.7);
 }
 
-.team {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 8vh;
-  margin-top: 80px;
-  width: 100%;
-}
