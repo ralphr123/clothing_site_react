@@ -5,7 +5,7 @@ import '../App.css';
 import { Bubbles } from '../Models/Bubbles';
 
 // Components
-import { ImageMain, NavBar, SideBar, NewArrivals, TeamMemberGrid } from '../Components';
+import { ImageMain, NavBar, SideBar, NewArrivals, TeamMemberGrid, Footer } from '../Components';
 import FadeIn from 'react-fade-in';
 import Particles from 'react-particles-js';
 
@@ -44,6 +44,7 @@ const Home = () => {
             </div>
             <NewArrivals />
             <TeamMemberGrid />
+            <Footer />
         </div>
     )
 }

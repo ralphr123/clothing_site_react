@@ -10,7 +10,7 @@ const SideBar: React.FC<SideBarProps> = (props) => {
         <div className={props.className}>
             <span className="list-item">Browse Catalog</span>
             <span className="list-item">Membership</span>
-            <span className="list-item">Our Team</span>
+            <span className="list-item">Our Brand</span>
             <span className="list-item">About</span>
         </div>
     )
