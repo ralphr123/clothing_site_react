@@ -196,48 +196,66 @@ html {
 /* New Arrivals */
 .new-arrivals {
   height: auto;
-  min-height: 100vh;
+  min-height: 96vh;
   flex-direction: column;
 }
 
 /* Product */
 .product-container {
   width: 25%;
-  transition: transform .15s ease-in-out;
   margin-bottom: 10px;
+  position: relative;
+  transition: background-color .05s ease-in-out;
 }
+
 
 .product-container:hover {
   cursor: pointer;
-  transform: scale(1.05);
-  /* background-color: rgba(255, 255, 255, 0.4); */
+  background-color: #f7f7f7;
 }
 
-.products-container {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  padding: 0;
-  height: auto;
-  min-height: 50vh;
-  width: 100vw;
-  flex-wrap: wrap;
-  position: relative;
+.product-container:hover > .product {
+  opacity: 0.5 !important;
 }
 
-.product {
-  width: 80%;
+.product-container:hover > .expand-container {
+  top: 70%;
+  opacity: 1;
+}
+
+.expand-container {
+  background: rgba(255, 255, 255, 1);
+  border: 0.5px solid #d4d4d4;
+  position: absolute;
+  font-size: large;
+  font-family: 'Baloo Tamma 2', cursive;
+  top: 75%;
+  opacity: 0;
+  transition: top .1s ease-in-out, opacity .1s ease-in-out, color .1s ease-in-out, background-color .1s ease-in-out;
+  height: 30px;
+  width: 250px;
+  box-shadow: 0 0 10px 0px white;
+}
+
+.expand-container:hover {
+  background-color: #3b3b3b;
+  color: white;
+}
+
+.expand {
+  margin-top: 5.5px;
 }
 
 .product-description {
-  /* background: rgba(217, 180, 207, 0.8); */
-  /* background: rgba(184, 169, 180, 0.8); */
-  background: rgba(163, 11, 123, 0.7);
-  width: 80%;
-  height: 40px;
+  /* background: rgba(66, 66, 66, 0.9); */
+  width: 90%;
+  height: 25px;
   position: absolute;
   padding-left: 10px;
-  color: white;
-  font-size: small;
+  color: #3b3b3b;
+  font-size: x-small;
+  top: 100%;
+  margin-top: 5px;
 }
 
 .product-price {
@@ -253,15 +271,22 @@ html {
   color: white;
 }
 
-.expand-container {
-  background: rgba(255, 255, 255, 1);
-  border: 1px solid black;
-  position: absolute;
-  font-size: x-large;
-  top: 45%;
-  height: 40px;
-  width: 120px;
+.products-container {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 0;
+  height: auto;
+  min-height: 50vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  position: relative;
 }
+
+.product {
+  width: 80%;
+  transition: opacity .05s ease-in-out;
+}
+
 
 @media screen and (max-width: 850px) {
   .product-container {
@@ -280,7 +305,7 @@ html {
 /* Team Member Grid */
 .team-member-grid {
   height: auto;
-  min-height: 100vh;
+  min-height: 95vh;
   width: 100vw;
   background: #f2f2f2;
   display: flex;
@@ -310,7 +335,7 @@ html {
 }
 
 .our-team {
-  min-height: 100vh;
+  min-height: 95vh;
   flex: 7;
   background: black;
   /* padding-left: 20px;
@@ -328,11 +353,20 @@ html {
 
 .our-team-descr {
   color: white;
+  font-size: 1.1em;
   width: 80%;
 }
 
 .our-team-descr-cont {
   width: 100%
+}
+
+.our-team-image-container {
+  width: 100%;
+}
+
+.our-team-image {
+  width: 103%;
 }
 
 @media screen and (max-width: 8500px) {

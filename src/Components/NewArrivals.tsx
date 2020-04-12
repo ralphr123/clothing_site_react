@@ -11,7 +11,7 @@ const NewArrivals = () => {
         <span className="header center">New Arrivals</span>
         <div className="products-container center">
           <Product //
-            src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2020/01/09/goods-img/1583374187192648779.jpg" 
+            src="https://i.ibb.co/9cCGLZK/1583374187192648779-removebg-preview.png" 
             // https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2020/01/09/goods-img/1583374187534358903.jpg
             description="Applique Long Cargo Jogger Pants - Black" 
             price={39.99}
