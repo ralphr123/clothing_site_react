@@ -13,7 +13,7 @@ export class Bubbles {
         this.params = {
             particles: {
                 number: {
-                    value: 50,
+                    value: 55,
                     density: {
                         enable: false
                     }

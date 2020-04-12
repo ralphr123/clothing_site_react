@@ -6,15 +6,16 @@ import TeamMembers from '../Data/TeamMembers.json';
 
 const TeamMemberGrid = () => {
     const [id, setId] = useState<number>(-1);
-    const ourTeamImage: string = "https://i.ibb.co/kHLnFkm/4-Steps-To-Learning-How-to-Read-Your-Knitting-2048x-removebg-preview-1.png";
+    // const ourTeamImage: string = "https://i.ibb.co/kHLnFkm/4-Steps-To-Learning-How-to-Read-Your-Knitting-2048x-removebg-preview-1.png";
 
     const handleOnClickTeamMember = (id: number): void => {
         setId(id);
         console.log(id);
+        console.log("hello");
     }
 
     return (
-        <div className="team-member-grid" onClick={() => handleOnClickTeamMember(3)}>
+        <div className="team-member-grid">
             <div className="team-members mobile">
                 <div className="team center">
                     <span>Executive Team</span>
@@ -27,7 +28,7 @@ const TeamMemberGrid = () => {
                                 jobTitle={member.jobTitle}
                                 description={member.shortDescription}
                                 src={member.src}
-                                onClick={handleOnClickTeamMember}
+                                onClick={() => handleOnClickTeamMember(member.id)}
                                 key={member.id}
                             />
                         );

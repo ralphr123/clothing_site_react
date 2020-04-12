@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../App.css';
 
 // Images
 import MainImage from '../Images/MainImage.png';
-import { SideBar } from '.';
-import Particles from 'react-particles-js';
 
 interface ImageMainProps {
     style?: React.CSSProperties;

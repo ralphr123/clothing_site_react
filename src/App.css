@@ -13,8 +13,8 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0px; 
+  background: transparent;  
 }
 
 .App {
@@ -204,7 +204,7 @@ html {
 /* New Arrivals */
 .new-arrivals {
   height: auto;
-  min-height: 96vh;
+  min-height: 88vh;
   flex-direction: column;
 }
 
@@ -254,6 +254,34 @@ html {
   margin-top: 5.5px;
 }
 
+.browse-container {
+  /* height: 15vh; */
+  width: 105vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.browse-catalog-button {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid #d4d4d4;
+  position: relative;
+  font-size: x-large;
+  font-family: 'Baloo Tamma 2', cursive;
+  transition: color .1s ease-in-out, background-color .1s ease-in-out;
+  height: 50px;
+  width: 250px;
+  box-shadow: 0 0 10px 0px white;
+  margin-bottom: 50px;
+  margin-right: 70px;
+}
+
+.browse-catalog-button:hover {
+  cursor: pointer;
+  background-color: #3b3b3b;
+  color: white;
+}
+
 .product-description {
   /* background: rgba(66, 66, 66, 0.9); */
   width: 90%;
@@ -281,7 +309,7 @@ html {
 
 .products-container {
   margin-top: 50px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding: 0;
   height: auto;
   min-height: 50vh;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface ProductProps {
     src: string;
@@ -7,12 +7,6 @@ interface ProductProps {
 }
 
 const Product: React.FC<ProductProps> = (props) => {
-    const [hover, setHover] = useState<boolean>(false);
-
-    const toggleHover = (): void => {
-        // setHover(!hover);
-    }
-
     return (
         <div className="product-container center-horizontal">
             <img className="product" src={props.src} alt={props.description} />  
