@@ -211,7 +211,7 @@ html {
 /* Product */
 .product-container {
   width: 25%;
-  margin-bottom: 10px;
+  margin-bottom: 80px;
   position: relative;
   transition: background-color .05s ease-in-out;
 }
@@ -469,7 +469,7 @@ html {
 .footer-container {
   width: 100vw;
   height: auto;
-  min-height: 52vh;
+  min-height: 50vh;
   margin-top: 50px;
   position: relative;
 }
@@ -477,11 +477,12 @@ html {
 .footer {
   width: 85vw;
   background: #f2f2f2;
-  height: 45vh;
+  min-height: 45vh;
   border: 0.5px solid #a5a4a4;
   position: relative;
   flex-wrap: wrap;
   padding-top: 10px;
+  margin-bottom: 20px;
 }
 
 .footer-group {
