@@ -26,6 +26,10 @@ html {
   background: rgba(92, 87, 78, 0.5)
 }
 
+.no-overflow {
+  overflow: hidden !important;
+}
+
 .text-link {
   color: #0571e4;
   text-decoration: none;
@@ -103,6 +107,10 @@ html {
   height:100vh;
   position: absolute;
   z-index: -1;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .relative {
@@ -628,18 +636,29 @@ html {
   }
 }
 
+/* Our Brand */
+.our-brand-title {
+  max-height: min-content;
+  font-family: 'Baloo Tamma 2', cursive;
+  font-size: calc(1.20em + 1.35vw);
+  margin-bottom: 0;
+}
+
+.our-brand-text {
+  color: #494949;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: calc(0.60em + 0.45vw);
+  margin-top: 0;
+  max-width: 85%;
+}
+
 /* Ethical Labour */
 .ethical-labour {
   /* background: url('https://i.ibb.co/j81bmZp/african-sewing.jpg'); */
   position: relative;
   overflow-x: hidden;
-  margin-bottom: 100vw;
-}
-
-.ethical-labour-image { /* Make blur on hover and include info about her */
-  height: calc(18em + 19vw);
-  bottom: 0;
-  position: absolute;
+  /* margin-bottom: 100vw; */
 }
 
 .ethical-labour-text-container {
@@ -659,21 +678,28 @@ html {
   padding-bottom: 35px;
 }
 
-.our-brand-title {
-  max-height: min-content;
-  font-family: 'Baloo Tamma 2', cursive;
-  font-size: calc(1.20em + 1.35vw);
-  margin-bottom: 0;
+/* Better for less */
+.better-for-less {
+  color: black;
 }
 
-.our-brand-text {
-  color: #494949;
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: calc(0.60em + 0.45vw);
+.better-for-less-box {
+  max-width: 35%;
+  position: relative;
+  z-index: 2;
+  /* background: rgba(219, 218, 217, 0.67); */
+  min-height: min-content;
+  height: min-content;
+  padding-left: 20px;
+  padding-bottom: 35px;
+  margin-left: 65px;
+  overflow: hidden !important;
 }
 
-.ethical-labour-text-width {
-  margin-top: 0;
-  max-width: 85%;
+.better-for-less-image {
+  position: absolute;
+  height: 100vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  right: 0;
 }

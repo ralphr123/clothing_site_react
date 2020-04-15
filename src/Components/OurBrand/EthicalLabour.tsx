@@ -8,6 +8,7 @@ const EthicalLabour = () => {
             <Parallax // blur={{ min: -150, max: 150 }}
                 strength={400}
                 style={{ position: 'absolute' }}
+                bgImageAlt='ethical labour sewing'
             >
                 <div className="full-page"></div>
                     <Background>
@@ -20,9 +21,7 @@ const EthicalLabour = () => {
                     <div className="ethical-labour-text">
                         <div className="min-height">
                             <p className="our-brand-title">Ethical labour starts with the consumer</p>
-                            <div className="ethical-labour-text-width">
-                                <p className="our-brand-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
+                            <p className="our-brand-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <a href='' className="text-link" >LEARN MORE ABOUT THIS</a>
                         </div>
                     </div>
