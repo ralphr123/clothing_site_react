@@ -3,13 +3,16 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 
 // Pages
-import Home from './Pages/Home';
+import { Home, OurBrand } from './Pages';
 
 const App = () => {
   return (
     <Router>
       <div className="App" >
           <Switch>
+            <Route path="/our-brand">
+              <OurBrand />
+            </Route>
             <Route path="/">
               <Home />
             </Route>
