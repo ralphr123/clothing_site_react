@@ -26,13 +26,44 @@ html {
   background: rgba(92, 87, 78, 0.5)
 }
 
+.text-link {
+  color: #0571e4;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  font-size: calc(0.5em + 0.35vw);
+  font-weight: 900;
+  text-align: left;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.text-link:hover {
+  color: #214E34;
+  text-decoration: underline;
+}
+
 .flex {
   display: flex;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+  color: inherit;
 }
 
 .full-size {
   width: 100%;
   height: 100%;
+}
+
+.full-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.min-height {
+  max-height: min-content;
 }
 
 .center {
@@ -96,6 +127,10 @@ html {
   background: white;
 }
 
+.dark-no-background {
+  color: black;
+}
+
 /* ImageMain */
 .main-image {
   width: calc(18em + 18vw);
@@ -118,17 +153,6 @@ html {
   position: fixed;
 }
 
-/* .change-language {
-  position: absolute;
-  top: 2.9vh;
-  color: white;
-  width: 5.5em;
-  height: 27px;
-  min-height: min-content;
-  left: 90vw;
-  z-index: 9999999999;
-} */
-
 .change-language {
   width: 100vw;
   height: 10vh;
@@ -137,13 +161,12 @@ html {
   align-items: center;
   color: white;
   position: absolute;
-  /* z-index: 9999999; */
 }
 
 .change-language-container {
   width: 5em;
   position: relative;
-  z-index: 9999999;
+  z-index: 3;
   margin-right: 3vw;
 }
 
@@ -157,7 +180,7 @@ html {
   margin-right: 5px;
   margin-top: 3.3px;
   position: relative;
-  z-index: 999;
+  z-index: 2;
 }
 
 .select-image {
@@ -171,26 +194,31 @@ html {
   /* padding-left: calc(0.82em + 0.22vw); */
   position: relative;
   font-family: 'Unica One', cursive;
-  z-index: 999;
+  z-index: 2;
 }
 
 .logo {
   font-size: calc(1.5em + 1.5vw);
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
+
 .register-container {
   margin: 0;
   position: relative;
   height: 6vh;
   width: calc(3em + 3vw);
-  z-index: 999;
+  z-index: 2;
 }
 
 .register {
   margin-top: 4px;
   font-size: calc(0.82em + 0.22vw);
   cursor: pointer;
-  z-index: 999;
+  z-index: 2;
 }
 
 .register:after {    
@@ -214,7 +242,7 @@ html {
 
 .search-icon {
   cursor: pointer;
-  z-index: 999;
+  z-index: 2;
 }
 
 /* Sidebar */
@@ -598,4 +626,54 @@ html {
     flex: 33%;
     max-width: 33%;
   }
-} 
+}
+
+/* Ethical Labour */
+.ethical-labour {
+  /* background: url('https://i.ibb.co/j81bmZp/african-sewing.jpg'); */
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom: 100vw;
+}
+
+.ethical-labour-image { /* Make blur on hover and include info about her */
+  height: calc(18em + 19vw);
+  bottom: 0;
+  position: absolute;
+}
+
+.ethical-labour-text-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ethical-labour-text {
+  max-width: 50%;
+  position: relative;
+  z-index: 2;
+  background: rgba(219, 218, 217, 0.67);
+  min-height: min-content;
+  height: min-content;
+  padding-left: 20px;
+  padding-bottom: 35px;
+}
+
+.our-brand-title {
+  max-height: min-content;
+  font-family: 'Baloo Tamma 2', cursive;
+  font-size: calc(1.20em + 1.35vw);
+  margin-bottom: 0;
+}
+
+.our-brand-text {
+  color: #494949;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: calc(0.60em + 0.45vw);
+}
+
+.ethical-labour-text-width {
+  margin-top: 0;
+  max-width: 85%;
+}

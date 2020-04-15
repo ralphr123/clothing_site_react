@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // Components
 import { TeamMember } from '.';
-import TeamMembers from '../Data/TeamMembers.json';
+import TeamMembers from '../../Data/TeamMembers.json';
 
 const TeamMemberGrid = () => {
     const [id, setId] = useState<number>(-1);

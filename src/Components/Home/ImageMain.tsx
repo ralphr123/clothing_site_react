@@ -1,8 +1,8 @@
 import React from 'react';
-import '../App.css';
+
 
 // Images
-import MainImage from '../Images/MainImage.png';
+import MainImage from '../../Images/MainImage.png';
 
 interface ImageMainProps {
     style?: React.CSSProperties;

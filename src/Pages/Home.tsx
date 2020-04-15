@@ -5,7 +5,8 @@ import '../App.css';
 import { Bubbles } from '../Models/Bubbles';
 
 // Components
-import { ImageMain, NavBar, SideBar, NewArrivals, TeamMemberGrid, Footer } from '../Components';
+import { ImageMain, SideBar, NewArrivals, TeamMemberGrid, Footer } from '../Components/Home';
+import NavBar from '../Components/Navbar';
 import FadeIn from 'react-fade-in';
 import Particles from 'react-particles-js';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import { Link } from 'react-router-dom';
 
 // Icons
 import SearchIcon from '@material-ui/icons/Search';
@@ -9,13 +9,18 @@ interface NavBarProps {
 }
 
 const NavBar: React.FC<NavBarProps> = (props) => {
+    const getColor = (): string => { // NEED TO CHANGE
+        if (props.className === 'dark' || props.className === "dark-no-background") return 'black';
+        return '';
+    }
+    const color: { color: string } = { color: getColor()};
     return (
         <div style={{ width: '100vw', position: 'relative' }}>
             <div className="navbar-container">
                 <div className={`navbar center ${props.className}`}>
-                        <div className="logo-container">
+                        <Link className="logo-container no-text-decoration" to='/'>
                             <span className="logo">Ludvig</span>
-                        </div>
+                        </Link>
                         <div className="register-container center">
                             <span className="register">Sign up</span>
                         </div>
@@ -31,9 +36,9 @@ const NavBar: React.FC<NavBarProps> = (props) => {
                 </div>
             </div>
             <div className="change-language unselectable">
-                <div className="change-language-container center">
+                <div className="change-language-container center" style={color}>
                     <img src="https://i.ibb.co/c1GPxrr/51h-LPmry-RHL-AC-SL1500.jpg" className="language-image" /><span>EN</span>
-                    <img src="https://i.ibb.co/wyJ44sW/arrow-png-white-16.png" className="select-image" />
+                    <img src="https://i.ibb.co/wyJ44sW/arrow-png-white-16.png" className="select-image" /> {/* MAKE INTO ICON*/}
                 </div>
             </div>
         </div>

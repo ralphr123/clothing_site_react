@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+
 
 // Components
 import { Product } from '.';
