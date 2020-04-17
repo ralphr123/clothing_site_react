@@ -5,7 +5,7 @@ import '../App.css';
 import { Bubbles } from '../Models/Bubbles';
 
 // Components
-import { ImageMain, SideBar, NewArrivals, TeamMemberGrid, Footer } from '../Components/Home';
+import { ImageMain, SideBar, NewArrivals, TeamMemberGrid } from '../Components/Home';
 import NavBar from '../Components/Navbar';
 import FadeIn from 'react-fade-in';
 import Particles from 'react-particles-js';
@@ -31,7 +31,7 @@ const Home = () => {
 
     return (
         <div>
-            <div className="relative">
+            <div className="full-page relative">
                 <FadeIn>
                     <NavBar className={handleNavBarColor()} />
                     {/* <h3 style={{ position: "fixed", color: (currentScrollHeight < 300 ? "white" : "black"), marginTop: 100, marginLeft: 100 }}>{`Percentage scrolled: ${currentScrollHeight}%.`}</h3> 
@@ -45,7 +45,6 @@ const Home = () => {
             </div>
             <NewArrivals />
             <TeamMemberGrid />
-            <Footer />
         </div>
     )
 }

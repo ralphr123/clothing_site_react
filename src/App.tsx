@@ -4,6 +4,7 @@ import './App.css';
 
 // Pages
 import { Home, OurBrand } from './Pages';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
@@ -11,10 +12,12 @@ const App = () => {
       <div className="App" >
           <Switch>
             <Route path="/our-brand">
-                <OurBrand />
+              <OurBrand />
+              <Footer />
             </Route>
             <Route path="/">
               <Home />
+              <Footer />
             </Route>
           </Switch>
       </div>

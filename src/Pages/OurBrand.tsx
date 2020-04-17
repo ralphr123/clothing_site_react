@@ -1,11 +1,12 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import '../App.css'
 import FadeIn from 'react-fade-in';
-import { ParallaxProvider, useController } from 'react-scroll-parallax';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 // Components
-import { EthicalLabour, BetterForLess } from '../Components/OurBrand';
+import { EthicalLabour, BetterForLess, SuperbQuality } from '../Components/OurBrand';
 import NavBar from '../Components/Navbar';
+import BrigherColors from '../Components/OurBrand/BrighterColors';
 
 
 
@@ -18,6 +19,10 @@ const OurBrand = () => {
                 <ParallaxProvider>
                     <BetterForLess />
                 </ParallaxProvider>
+                <BrigherColors />
+                <ParallaxProvider>
+                    <SuperbQuality />
+                </ParallaxProvider>
             </FadeIn>
         </div>
     )
@@ -25,7 +30,9 @@ const OurBrand = () => {
 
 /* 
     1. Ethical labour starts with the consumer
-    2. Better materials for less
+    2. Better materials for less https://paintingvalley.com/drawings/sewing-drawing-5.jpg
+    3. Brighter colors
+    4. A vow to superb quality
 */
 
 export default OurBrand;

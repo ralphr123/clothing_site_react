@@ -88,6 +88,18 @@ html {
   align-items: center;
 }
 
+.end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -115,7 +127,6 @@ html {
 
 .relative {
   position: relative;
-  height: 100vh;
 }
 
 .header {
@@ -506,6 +517,30 @@ html {
     flex: 50%;
     max-width: 50%;
   }
+  .better-for-less {
+    margin-left: 0px !important;
+  }
+  .better-for-less-image {
+    right: 0 !important;
+  }
+  .ethical-labour {
+    max-width: 75% !important;
+  }
+  .better-for-less-text {
+    max-width: 75% !important;
+    background: rgba(219, 218, 217, 0.4);
+  }
+  .superb-quality-image {
+    height: 75vw !important;
+  }
+  .superb-quality-text {
+    text-align: center !important;
+  }
+  .superb-quality-button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 } 
 
 @media screen and (max-width: 1100px) {
@@ -518,7 +553,6 @@ html {
     height: min-content;
     padding-bottom: 50px;
   }
-
   .team-member {
     margin-bottom: 35px !important;
   }
@@ -648,58 +682,74 @@ html {
   color: #494949;
   margin-top: 0;
   margin-bottom: 8px;
-  font-size: calc(0.60em + 0.45vw);
+  font-size: calc(0.95em + 0.10vw);
   margin-top: 0;
   max-width: 85%;
 }
 
-/* Ethical Labour */
-.ethical-labour {
-  /* background: url('https://i.ibb.co/j81bmZp/african-sewing.jpg'); */
-  position: relative;
-  overflow-x: hidden;
-  /* margin-bottom: 100vw; */
+.our-brand-border {
+  border-top: 1px solid #E4BB97;
+  width: 80vw;
 }
 
-.ethical-labour-text-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.ethical-labour-text {
-  max-width: 50%;
+.learn-more-text {
   position: relative;
   z-index: 2;
-  background: rgba(219, 218, 217, 0.67);
   min-height: min-content;
   height: min-content;
   padding-left: 20px;
   padding-bottom: 35px;
+}
+
+/* Ethical Labour */
+.ethical-labour {
+  max-width: 50%;
+  background: rgba(219, 218, 217, 0.67);
+  /* margin-right: 50px; */
 }
 
 /* Better for less */
 .better-for-less {
-  color: black;
+  margin-left: 165px;
 }
 
-.better-for-less-box {
+.better-for-less-text {
   max-width: 35%;
-  position: relative;
-  z-index: 2;
-  /* background: rgba(219, 218, 217, 0.67); */
-  min-height: min-content;
-  height: min-content;
-  padding-left: 20px;
-  padding-bottom: 35px;
-  margin-left: 65px;
-  overflow: hidden !important;
 }
 
 .better-for-less-image {
   position: absolute;
-  height: 100vh;
+  height: 85vh;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  right: 0;
+  right: calc(5em + 15vw);
+  top: 90px;
+}
+
+/* Superb Quality */
+.superb-quality-image {
+  height: 45vw;
+}
+
+.superb-quality-container {
+  margin-top: 10vh;
+  flex-wrap: wrap;
+}
+
+.superb-quality-text {
+  max-width: 500px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+}
+
+.superb-quality {
+  margin-left: 5px;
+  /* background: salmon; */
+}
+
+.brighter-colors-image {
+  height: 200vh;
+}
+.superb-quality-button {
+  width: 100%;
 }

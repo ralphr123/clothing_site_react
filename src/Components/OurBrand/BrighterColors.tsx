@@ -4,22 +4,22 @@ import { Parallax, Background } from 'react-parallax';
 // Components
 import { LearnMore } from '.';
 
-const EthicalLabour = () => {
+
+const BrigherColors = () => {
     return (
         <>
             <Parallax // blur={{ min: -150, max: 150 }}
                 strength={400}
                 style={{ position: 'absolute' }}
                 bgImageAlt='ethical labour sewing'
+                bgImage="https://i.ibb.co/K6MxwjG/i-Stock-911053804-1030x687.jpg"
+                className="full-page"
             >
                 <div className="full-page"></div>
-                    <Background>
-                        <img src="https://i.ibb.co/j81bmZp/african-sewing.jpg" />
-                    </Background>
             </Parallax>
-            <LearnMore className="end-center" classNameText="ethical-labour" title="Ethical labour starts with the consumer" />
+            <LearnMore className="start-center" classNameText="ethical-labour" title="Brighter colors" />
         </>
     )
 }
 
-export default EthicalLabour;
+export default BrigherColors;
