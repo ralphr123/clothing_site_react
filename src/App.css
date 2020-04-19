@@ -56,6 +56,10 @@ html {
   color: inherit;
 }
 
+.baloo-tamma {
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
 .full-size {
   width: 100%;
   height: 100%;
@@ -66,8 +70,16 @@ html {
   height: 100vh;
 }
 
+.full-width {
+  width: 100vw;
+}
+
 .min-height {
   max-height: min-content;
+}
+
+.center-text {
+  text-align: center;
 }
 
 .center {
@@ -161,19 +173,16 @@ html {
 /* Navbar */
 .navbar-container {
   position: absolute;
-  width: 100vw;
   z-index: 2;
 }
 
 .navbar {
   margin: 0;
   height: 10vh;
-  width: 100vw;
   position: fixed;
 }
 
 .change-language {
-  width: 100vw;
   height: 10vh;
   display: flex;
   justify-content: flex-end;
@@ -307,7 +316,7 @@ html {
   width: 25%;
   margin-bottom: 80px;
   position: relative;
-  transition: background-color .05s ease-in-out;
+  transition: background-color .15s ease-in-out;
 }
 
 
@@ -330,7 +339,6 @@ html {
   border: 0.5px solid #d4d4d4;
   position: absolute;
   font-size: large;
-  font-family: 'Baloo Tamma 2', cursive;
   top: 75%;
   opacity: 0;
   transition: top .1s ease-in-out, opacity .1s ease-in-out, color .1s ease-in-out, background-color .1s ease-in-out;
@@ -361,7 +369,6 @@ html {
   border: 1px solid #d4d4d4;
   position: relative;
   font-size: x-large;
-  font-family: 'Baloo Tamma 2', cursive;
   transition: color .1s ease-in-out, background-color .1s ease-in-out;
   height: 50px;
   width: 250px;
@@ -407,7 +414,6 @@ html {
   padding: 0;
   height: auto;
   min-height: 50vh;
-  width: 100vw;
   flex-wrap: wrap;
   position: relative;
 }
@@ -442,7 +448,6 @@ html {
 .team-member-grid {
   height: auto;
   min-height: 100vh;
-  width: 100vw;
   background: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
@@ -618,7 +623,6 @@ html {
 
 /* Footer  */
 .footer-container {
-  width: 100vw;
   height: auto;
   min-height: 50vh;
   margin-top: 50px;
@@ -644,14 +648,12 @@ html {
 }
 
 .footer-title {
-  font-family: 'Baloo Tamma 2', cursive;
   font-size: medium;
   color: black;
   font-weight: 600;
 }
 
 .footer-option {
-  font-family: 'Baloo Tamma 2', cursive;
   font-size: medium;
   color: #6b6868;
   font-weight: 500;
@@ -673,7 +675,6 @@ html {
 /* Our Brand */
 .our-brand-title {
   max-height: min-content;
-  font-family: 'Baloo Tamma 2', cursive;
   font-size: calc(1.20em + 1.35vw);
   margin-bottom: 0;
 }
@@ -753,3 +754,130 @@ html {
 .superb-quality-button {
   width: 100%;
 }
+
+/* Membership Choices */
+.membership-image-container {
+  height: 50vh;
+  position: relative;
+}
+
+.membership-image {
+  height: auto;
+  position: absolute;
+}
+
+.membership-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: calc(3em + 5vw);
+  font-weight: 500;
+  color: white;
+  margin-left: 3vw;
+}
+
+.membership-intro {
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.membership-intro-box {
+  margin-top: 60px;
+}
+
+.membership-intro-title {
+  font-size: calc(1.00em + 1.15vw);
+  font-style: italic;
+}
+
+.style {
+  color: #cf125e;
+  font-weight: 500;
+}
+
+.membership-options-container {
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.membership-option {
+  margin: 20px;
+  margin-top: 30px;
+  height: 430px;
+  width: 290px;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 7px 7px;
+  transition: box-shadow 0.08s ease-in-out, transform 0.08s ease-in-out;
+}
+
+.membership-option:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px;
+  transform: translate(3px, 0)  
+}
+
+.membership-option:hover .basic {
+  background-color: #ace7ff;
+}
+.membership-option:hover .premium {
+  background-color: #9ffdbe;
+}
+.membership-option:hover .gold {
+  background-color: #fde39b;
+}
+
+.membership-option-title {
+  width: 100%;
+  font-size: xx-large;
+  font-style: italic;
+  margin: 0;
+  height: min-content;
+}
+
+.membership-list {
+  line-height: 27px;
+  font-size: medium;
+  color: #6b6868;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.membership-option-price {
+  width: 100%;
+  font-size: large;
+  font-style: italic;
+  margin: 0;
+  height: min-content;
+}
+
+.front {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.membership-back-title {
+  font-size: calc(0.6em + 0.8vw);
+  font-weight: 500;
+}
+
+.membership-back-button {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid black;
+  box-shadow: 1px 1px;
+  position: relative;
+  font-size: large;
+  transition: color .1s ease-in-out, background-color .1s ease-in-out;
+  height: 30px;
+  width: 150px;
+  margin-top: 10px;
+  padding-top: 4px;
+}
+
+.membership-back-button:hover {
+  cursor: pointer;
+  background-color: #3b3b3b;
+  color: white;
+  box-shadow: 0px 0px;
+}
+
+/* Membership Benefits */

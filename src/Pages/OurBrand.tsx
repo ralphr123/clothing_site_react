@@ -5,7 +5,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 // Components
 import { EthicalLabour, BetterForLess, SuperbQuality } from '../Components/OurBrand';
-import NavBar from '../Components/Navbar';
+import Navbar from '../Components/Navbar';
 import BrigherColors from '../Components/OurBrand/BrighterColors';
 
 
@@ -14,7 +14,7 @@ const OurBrand = () => {
     return (
         <div>
             <FadeIn>
-                <NavBar className="dark-no-background" /> 
+                <Navbar className="dark-no-background" /> 
                 <EthicalLabour />
                 <ParallaxProvider>
                     <BetterForLess />
@@ -30,7 +30,7 @@ const OurBrand = () => {
 
 /* 
     1. Ethical labour starts with the consumer
-    2. Better materials for less https://paintingvalley.com/drawings/sewing-drawing-5.jpg
+    2. Better materials for less
     3. Brighter colors
     4. A vow to superb quality
 */

@@ -18,11 +18,11 @@ const SuperbQuality = () => {
             <Parallax y={[30, -42]}>
                 <div className="superb-quality" >
                         <div className="superb-quality-text">
-                            <p className="our-brand-title">A vow to superb quality</p>
+                            <p className="our-brand-title baloo-tamma">A vow to superb quality</p>
                             <p className="our-brand-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         <div className="superb-quality-button">
-                            <div className="browse-catalog-button center">
+                            <div className="browse-catalog-button baloo-tamma center">
                                 <span className="expand" >BROWSE CATALOG</span>
                             </div>
                         </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Link } from "react-router-dom";
 
 
@@ -12,7 +11,9 @@ const SideBar: React.FC<SideBarProps> = (props) => {
     return (
         <div className={props.className}>
             <span className="list-item">Browse Catalog</span>
-            <span className="list-item">Membership</span>
+            <Link className="no-text-decoration" to="/membership">
+                <span className="list-item">Membership</span>
+            </Link>
             <Link className="no-text-decoration" to="/our-brand">
                 <span className="list-item">Our Brand</span>
             </Link>

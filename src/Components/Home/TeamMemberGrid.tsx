@@ -15,7 +15,7 @@ const TeamMemberGrid = () => {
     }
 
     return (
-        <div className="team-member-grid">
+        <div className="team-member-grid full-width">
             <div className="team-members mobile">
                 <div className="team center">
                     <span>Executive Team</span>

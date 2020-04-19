@@ -10,7 +10,7 @@ const NewArrivals = () => {
     <div>
       <div className="new-arrivals flex">
           <span className="header center">New Arrivals</span>
-          <div className="products-container center">
+          <div className="products-container center full-width">
             <Product //
               src="https://i.ibb.co/9cCGLZK/1583374187192648779-removebg-preview.png" 
               // https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2020/01/09/goods-img/1583374187534358903.jpg
@@ -38,7 +38,7 @@ const NewArrivals = () => {
           </div>
       </div>
       <div className="browse-container">
-        <div className="browse-catalog-button center">
+        <div className="browse-catalog-button baloo-tamma center">
           <span className="expand" >BROWSE CATALOG</span>
         </div>
       </div>

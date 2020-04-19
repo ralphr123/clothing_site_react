@@ -6,7 +6,7 @@ import { Bubbles } from '../Models/Bubbles';
 
 // Components
 import { ImageMain, SideBar, NewArrivals, TeamMemberGrid } from '../Components/Home';
-import NavBar from '../Components/Navbar';
+import Navbar from '../Components/Navbar';
 import FadeIn from 'react-fade-in';
 import Particles from 'react-particles-js';
 
@@ -22,7 +22,7 @@ const Home = () => {
 
     const opacity = Math.min(100 / window.pageYOffset, 1);
 
-    const handleNavBarColor = (): string => {
+    const handleNavbarColor = (): string => {
         if (currentScrollHeight < window.outerHeight*0.8) return "white"; // Not responsive, must fix
         if (currentScrollHeight > window.outerHeight*0.8) return "dark ";// Not responsive, must fix
 
@@ -33,7 +33,7 @@ const Home = () => {
         <div>
             <div className="full-page relative">
                 <FadeIn>
-                    <NavBar className={handleNavBarColor()} />
+                    <Navbar className={handleNavbarColor()} />
                     {/* <h3 style={{ position: "fixed", color: (currentScrollHeight < 300 ? "white" : "black"), marginTop: 100, marginLeft: 100 }}>{`Percentage scrolled: ${currentScrollHeight}%.`}</h3> 
                     <h3 style={{ position: "fixed", color: (currentScrollHeight < 300 ? "white" : "black"), marginTop: 150, marginLeft: 200 }}>{`Percentage scrolled: ${window.outerHeight}%.`}</h3>  */}
                     <div className="flex">
@@ -51,7 +51,7 @@ const Home = () => {
 /* 
     1. Front Page
     2. New Arrivals
-    3. The Stories
-    4. Work for us
+    3. Executive Team
+    4. Work for us (?)
 */
 export default Home;

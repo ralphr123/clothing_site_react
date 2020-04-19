@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
 
     return (
-        <div className="footer-container center">
-            <div className="footer center-horizontal">
+        <div className="footer-container center full-width">
+            <div className="footer center-horizontal baloo-tamma">
                 <div className="footer-group">
                     <span className="footer-title unselectable">PRODUCTS</span> <br/>
                     <span className="footer-option">WEBSITE TEMPLATES</span><br/>
