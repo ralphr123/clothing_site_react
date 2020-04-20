@@ -37,8 +37,8 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             </div>
             <div className="change-language unselectable full-width">
                 <div className="change-language-container center" style={color}>
-                    <img src="https://i.ibb.co/c1GPxrr/51h-LPmry-RHL-AC-SL1500.jpg" className="language-image" /><span>EN</span>
-                    <img src="https://i.ibb.co/wyJ44sW/arrow-png-white-16.png" className="select-image" /> {/* MAKE INTO ICON*/}
+                    <img src="https://i.ibb.co/c1GPxrr/51h-LPmry-RHL-AC-SL1500.jpg" className="language-image" alt="Canadian flag" /><span>EN</span>
+                    <img src="https://i.ibb.co/wyJ44sW/arrow-png-white-16.png" className="select-image" alt="down arrow" /> {/* MAKE INTO ICON*/}
                 </div>
             </div>
         </div>

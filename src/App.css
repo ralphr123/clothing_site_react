@@ -30,6 +30,14 @@ html {
   overflow: hidden !important;
 }
 
+.no-overflow-x {
+  overflow-x: hidden;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
 .text-link {
   color: #0571e4;
   text-decoration: none;
@@ -45,6 +53,7 @@ html {
 .text-link:hover {
   color: #214E34;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .flex {
@@ -119,7 +128,7 @@ html {
 
 .black {
   background: black;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin: 0;
 }
@@ -670,6 +679,24 @@ html {
     flex: 33%;
     max-width: 33%;
   }
+  .membership-benefits-left, .membership-benefits-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 100% !important;
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .shtuffers {
+    width: 290px !important;
+  }
+  .shtuffer {
+    text-align: center;
+  }
+  .membership-quit {
+    margin-top: 40px;
+  }
 }
 
 /* Our Brand */
@@ -856,7 +883,7 @@ html {
 }
 
 .membership-back-title {
-  font-size: calc(0.6em + 0.8vw);
+  font-size: 1.25em;
   font-weight: 500;
 }
 
@@ -881,3 +908,65 @@ html {
 }
 
 /* Membership Benefits */
+.membership-benefits {
+  width: 900px;
+  position: relative;
+}
+
+.membership-benefits-title {
+  font-size: 1.65em;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #525050;
+}
+
+.membership-benefits-left {
+  flex: 1;
+  height: min-content;
+  margin-right: 20px;
+  width: 450px;
+  position: relative;
+}
+
+.membership-benefits-right {
+  flex: 1;
+  min-height: 368.5px;
+  height: min-content;
+  margin-left: 20px;
+  width: 450px;
+  position: relative;
+}
+
+.quit-free-subheading {
+  max-width: 450px;
+}
+
+.membership-fine-print {
+  margin-top: 50px;
+  font-size: small;
+  color: #525050;
+  max-width: 700px;
+}
+
+/* Membership Benefit */
+.membership-benefit {
+  width: 100%;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+
+.membership-benefit-title {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.membership-benefit-subtitle {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #494949;
+}
+
+.membership-benefit-icon {
+  margin-right: 10px;
+}

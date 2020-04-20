@@ -14,7 +14,7 @@ const EthicalLabour = () => {
             >
                 <div className="full-page"></div>
                     <Background>
-                        <img src="https://i.ibb.co/j81bmZp/african-sewing.jpg" />
+                        <img src="https://i.ibb.co/j81bmZp/african-sewing.jpg" alt="women sewing" />
                     </Background>
             </Parallax>
             <LearnMore className="end-center" classNameText="ethical-labour" title="Ethical labour starts with the consumer" />

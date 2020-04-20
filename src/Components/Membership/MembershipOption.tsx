@@ -19,9 +19,9 @@ const MembershipOption: React.FC<MembershipOptionProps> = (props) => {
                     <div className="membership-list" style={{ lineHeight: '30px' }}>
                         {props.listItems.map((item, index) => {
                             return (
-                                <>
-                                    <span key={index}>{item}</span><br/>
-                                </>
+                                <div key={index}>
+                                    <span>{item}</span><br/>
+                                </div>
                             )
                         })}
                     </div>

@@ -14,7 +14,7 @@ const SuperbQuality = () => {
     return (
         <div className="superb-quality-container no-overflow full-page center">
             {/* <div className="our-brand-border" /> */}
-            <img src="https://i.ibb.co/XFb27S2/sewing-drawing-woman-2-original.png" className="superb-quality-image" />
+            <img src="https://i.ibb.co/XFb27S2/sewing-drawing-woman-2-original.png" className="superb-quality-image" alt="sewing woman" />
             <Parallax y={[30, -42]}>
                 <div className="superb-quality" >
                         <div className="superb-quality-text">

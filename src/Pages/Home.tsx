@@ -13,12 +13,20 @@ import Particles from 'react-particles-js';
 const Home = () => {
     const [currentScrollHeight, setCurrentScrollHeight] = useState<number>(0);
     useEffect(() => {
-        window.onscroll = () => { // Not responsive, must fix
-            requestAnimationFrame(() => {
-                setCurrentScrollHeight(window.pageYOffset);
-            });
+        let unmounted: boolean = false;
+
+        if (!unmounted) {
+            window.onscroll = () => { // Not responsive, must fix
+                requestAnimationFrame(() => {
+                    setCurrentScrollHeight(window.pageYOffset);
+                });
+            }
         }
-    });
+
+        return () => {
+            unmounted = true;
+        };
+    }, []);
 
     const opacity = Math.min(100 / window.pageYOffset, 1);
 
@@ -30,13 +38,11 @@ const Home = () => {
     }
 
     return (
-        <div>
-            <div className="full-page relative">
+        <div className="no-overflow-x">
+            <div className="full-page relative no-overflow">
                 <FadeIn>
                     <Navbar className={handleNavbarColor()} />
-                    {/* <h3 style={{ position: "fixed", color: (currentScrollHeight < 300 ? "white" : "black"), marginTop: 100, marginLeft: 100 }}>{`Percentage scrolled: ${currentScrollHeight}%.`}</h3> 
-                    <h3 style={{ position: "fixed", color: (currentScrollHeight < 300 ? "white" : "black"), marginTop: 150, marginLeft: 200 }}>{`Percentage scrolled: ${window.outerHeight}%.`}</h3>  */}
-                    <div className="flex">
+                    <div className="full-page">
                         {currentScrollHeight < 250 ? (<ImageMain style={{ opacity }} />) : null}
                         <Particles className="black particles" params={(new Bubbles()).params} />
                         {currentScrollHeight < window.screen.height*0.5 ? (<SideBar className="sidebar"/>) : null}

@@ -1,5 +1,4 @@
 import React from 'react';
-import FadeIn from 'react-fade-in';
 
 // Components
 import { MembershipOption } from '.';

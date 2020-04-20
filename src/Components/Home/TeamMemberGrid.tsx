@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // Components
 import { TeamMember } from '.';
 import TeamMembers from '../../Data/TeamMembers.json';
 
 const TeamMemberGrid = () => {
-    const [id, setId] = useState<number>(-1);
-    // const ourTeamImage: string = "https://i.ibb.co/kHLnFkm/4-Steps-To-Learning-How-to-Read-Your-Knitting-2048x-removebg-preview-1.png";
+    // const [id, setId] = useState<number>(-1);
 
     const handleOnClickTeamMember = (id: number): void => {
-        setId(id);
+        // setId(id);
         console.log(id);
         console.log("hello");
     }

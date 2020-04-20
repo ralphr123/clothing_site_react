@@ -16,7 +16,7 @@ const BetterForLess = () => {
 
     return (
         <div className="full-page">
-            <img src="https://i.ibb.co/kBRMmHL/soft-drawing-2-removebg-preview.png" className="better-for-less-image" />
+            <img src="https://i.ibb.co/kBRMmHL/soft-drawing-2-removebg-preview.png" className="better-for-less-image" alt="fabric" />
             <Parallax className="no-overflow" y={[40, -46]}>
                 <LearnMore className="start-center better-for-less" classNameText="better-for-less-text" title="Better materials for less" />
             </Parallax>
