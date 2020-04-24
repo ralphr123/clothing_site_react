@@ -434,9 +434,6 @@ html {
     flex: 50%;
     max-width: 50%;
   }
-  /* .change-language {
-    left: 80vw;
-  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -699,6 +696,9 @@ html {
   }
   .membership-quit {
     margin-top: 40px;
+  }
+  .mobile-gone {
+    display: none;
   }
 }
 
@@ -978,34 +978,106 @@ html {
 .browse-catalog-container {
   height: auto;
   position: relative;
-  padding-top: 200px;
+  padding-top: 50px;
 }
 
 /* Product Grid */
 .product-grid {
-  min-width: 580px;
+  min-width: 370px;
   height: auto;
-  flex: 13;
+  flex: 12;
   position: relative;
   padding-bottom: 10px;
 }
 
 .product-grid-mobile {
-  margin: 8px;
+  margin: 10px;
   margin-bottom: 42.5px;
+}
+
+.product-grid-title {
+  height: 70px;
+  padding-left: 10px;
+  line-height: 10px;
+}
+
+.product-grid p {
+  font-size: calc(0.7em + 0.6vw);
+}
+
+.product-grid span {
+  font-size: 12.5px;
 }
 
 /* Side Menu */
 .side-menu {
   flex: 2;
-  height: 110vh;
-  /* background-color: orange; */
-  min-width: 160px;
+  height: auto;
+  min-width: 180px;
   padding-left: 20px;
-  padding-top: 20px;
-  /* color: #525050; */
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
 
-.side-menu-two {
+#side-menu-two {
   margin-left: 15px;
+}
+
+/* Catalog Navbar */
+.catalog-navbar-container {
+  padding-top: 10vh;
+}
+
+.catalog-navbar {
+  background: black;
+  height: 70px;
+  color: white;
+}
+
+.catalog-navbar-item {
+  margin-right: 40px;
+}
+
+.catalog-navbar-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#catalog-navbar-sale {
+  font-size: 2.25em;
+  margin-right: 20px;
+}
+
+#catalog-navbar-sale-text {
+  font-size: 1.75em;
+  margin-right: 40px;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #5bd3bb;
+}
+
+@media screen and (max-width: 569.9843749px) {
+  .side-menu {
+    text-align: center;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  .side-menu-layer {
+    margin-left: 0 !important;
+  }
+  .browse-catalog-container {
+    padding-top: 0 !important;
+  }
+  .product-grid {
+    text-align: center;
+  }
+  .mobile-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mobile-title {
+    font-weight: 600;
+  }
 }

@@ -1,10 +1,10 @@
 import ProductGrid from './ProductGrid';
 import SideMenu from './SideMenu';
-import Product from './Product';
+import CatalogNavbar from './CatalogNavbar';
 
 export {
     ProductGrid,
     SideMenu,
-    Product
+    CatalogNavbar
 }
 

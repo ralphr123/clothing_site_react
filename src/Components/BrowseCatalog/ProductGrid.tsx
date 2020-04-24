@@ -5,25 +5,29 @@ import Products from '../../Data/Products.json';
 import Product from '../Product';
 
 const ProductGrid = () => {
-    const testAdress: string = "https://res.cloudinary.com/guess-img/image/upload/w_600,h_807,c_fill,g_auto/f_auto,q_auto/fl_strip_profile/v1/NA/Style/ECOMM/W0GAB4D2KM4-DRAY-ALT1";
-
     return (
-        <div className="product-grid wrap center-horizontal">
-            {Products.map((product, index) => {
-                return (
-                    <Product 
-                        description={product.description}
-                        src={product.src}
-                        price={product.price}
-                        widthCont={product.widthCont}
-                        widthButton={product.widthButton}
-                        widthImage={product.widthImage}
-                        contClass={product.contClass}
-                        contId={product.contId}
-                        key={index}
-                    />
-                )
-            })}
+        <div className="product-grid">
+            <div className="product-grid-title" >
+                <p>WOMEN'S CLOTHING | LUDVIG</p>
+                <span>Shop our full women's clothing line right here. You'll find dresses, jeans and tops in a variety of fits and styles.</span>
+            </div>
+            <div className="wrap flex mobile-center">
+                {Products.map((product, index) => {
+                    return (
+                        <Product 
+                            description={product.description}
+                            src={product.src}
+                            price={product.price}
+                            widthCont={product.widthCont}
+                            widthButton={product.widthButton}
+                            widthImage={product.widthImage}
+                            contClass={product.contClass}
+                            contId={product.contId}
+                            key={index}
+                        />
+                    )
+                })}
+            </div>
         </div>
     );
 }
