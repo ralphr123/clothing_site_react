@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 
 // Pages
-import { Home, OurBrand, Membership } from './Pages';
+import { Home, OurBrand, Membership, BrowseCatalog } from './Pages';
 import Footer from './Components/Footer';
 
 const App = () => {
@@ -17,6 +17,10 @@ const App = () => {
             </Route>
             <Route path="/membership">
               <Membership />
+              <Footer />
+            </Route>
+            <Route path="/browse-catalog">
+              <BrowseCatalog />
               <Footer />
             </Route>
             <Route path="/">

@@ -10,7 +10,9 @@ interface SideBarProps {
 const SideBar: React.FC<SideBarProps> = (props) => {
     return (
         <div className={props.className}>
-            <span className="list-item">Browse Catalog</span>
+            <Link className="no-text-decoration" to="/browse-catalog" >
+                <span className="list-item">Browse Catalog</span>
+            </Link>
             <Link className="no-text-decoration" to="/membership">
                 <span className="list-item">Membership</span>
             </Link>

@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
 
     return (
-        <div className="footer-container center full-width">
+        <div className="footer-container center full-width relative">
             <div className="footer center-horizontal baloo-tamma">
                 <div className="footer-group">
                     <span className="footer-title unselectable">PRODUCTS</span> <br/>

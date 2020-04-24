@@ -11,7 +11,7 @@ const Membership = () => {
         let unmounted: boolean = false;
 
         if (!unmounted) {
-            window.onscroll = () => { // Not responsive, must fix
+            window.onscroll = () => {
                 requestAnimationFrame(() => {
                     setCurrentScrollHeight(window.pageYOffset);
                 });
