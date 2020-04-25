@@ -359,7 +359,7 @@ html {
   background: rgba(255, 255, 255, 1);
   border: 0.5px solid #d4d4d4;
   position: absolute;
-  font-size: calc(0.6em + 0.55vw);
+  font-size: calc(0.65em + 0.45vw);
   top: 75%;
   opacity: 0;
   transition: top .1s ease-in-out, opacity .1s ease-in-out, color .1s ease-in-out, background-color .1s ease-in-out;
@@ -1001,11 +1001,11 @@ html {
   line-height: 10px;
 }
 
-.product-grid p {
+.product-grid-title p {
   font-size: calc(0.7em + 0.6vw);
 }
 
-.product-grid span {
+.product-grid-title span {
   font-size: 12.5px;
 }
 
@@ -1021,6 +1021,15 @@ html {
 
 #side-menu-two {
   margin-left: 15px;
+}
+
+#mobile-title {
+  font-weight: 600;
+}
+
+.expand-more {
+  color: #6b6868;
+  font-size: 17.5px !important;
 }
 
 /* Catalog Navbar */
@@ -1076,8 +1085,5 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  #mobile-title {
-    font-weight: 600;
   }
 }

@@ -14,6 +14,7 @@ const Home = () => {
     const [currentScrollHeight, setCurrentScrollHeight] = useState<number>(0);
     useEffect(() => {
         let unmounted: boolean = false;
+        window.scrollTo(0, 0);
 
         if (!unmounted) {
             window.onscroll = () => { // Not responsive, must fix

@@ -3,7 +3,7 @@ import React from 'react';
 
 // Components
 import Product from '../Product';
-
+import { Link } from 'react-router-dom';
 
 const NewArrivals = () => {
   return (
@@ -50,9 +50,9 @@ const NewArrivals = () => {
           </div>
       </div>
       <div className="full-width center">
-        <div className="browse-catalog-button baloo-tamma center">
+        <Link className="browse-catalog-button baloo-tamma unselectable center no-text-decoration" to="/browse-catalog">
           <span className="expand" >BROWSE CATALOG</span>
-        </div>
+        </Link>
       </div>
     </div>
   );

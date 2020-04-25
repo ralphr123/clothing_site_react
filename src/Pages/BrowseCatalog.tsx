@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FadeIn from 'react-fade-in';
 import Navbar from '../Components/Navbar';
 
@@ -6,7 +6,11 @@ import Navbar from '../Components/Navbar';
 import { ProductGrid, SideMenu, CatalogNavbar } from '../Components/BrowseCatalog';
 
 const BrowseCatalog = () => {
-    return (
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
+      return (
             <FadeIn>
                 <Navbar className="dark" />
                 <CatalogNavbar />

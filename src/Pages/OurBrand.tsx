@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../App.css'
 import FadeIn from 'react-fade-in';
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -8,23 +8,23 @@ import { EthicalLabour, BetterForLess, SuperbQuality } from '../Components/OurBr
 import Navbar from '../Components/Navbar';
 import BrigherColors from '../Components/OurBrand/BrighterColors';
 
-
-
 const OurBrand = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
-        <div>
-            <FadeIn>
-                <Navbar className="dark-no-background" /> 
-                <EthicalLabour />
-                <ParallaxProvider>
-                    <BetterForLess />
-                </ParallaxProvider>
-                <BrigherColors />
-                <ParallaxProvider>
-                    <SuperbQuality />
-                </ParallaxProvider>
-            </FadeIn>
-        </div>
+        <FadeIn>
+            <Navbar className="dark-no-background" /> 
+            <EthicalLabour />
+            <ParallaxProvider>
+                <BetterForLess />
+            </ParallaxProvider>
+            <BrigherColors />
+            <ParallaxProvider>
+                <SuperbQuality />
+            </ParallaxProvider>
+        </FadeIn>
     )
 }
 
