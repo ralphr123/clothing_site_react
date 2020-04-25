@@ -1,27 +1,27 @@
 [
     {
         "id": 0,
-        "name": "Scooby Doo",
+        "name": "James Bond",
         "jobTitle": "Chief Executive Officer",
         "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": "https://i.ibb.co/rpLdX2h/4f2ff9fbac1a9a61d4ba3e02a19d0e91.jpg"
+        "src": "https://cdn.luxe.digital/media/2019/09/12090457/business-professional-dress-code-men-james-bond-suit-style-luxe-digital.jpg"
     },
     {
         "id": 1,
-        "name": "Claude Debussy",
+        "name": "Stephanie Chang",
         "jobTitle": "Senior Vice President, Engineering",
         "shortDescription": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": "https://i.ibb.co/tQzhZJs/Claude-Debussy-atelier-Nadar.jpg"
+        "src": "https://i.pinimg.com/originals/f9/c4/0e/f9c40e3544fe9d1a8ee8db6525c2895a.jpg"
     },
     {
         "id": 2,
-        "name": "Doug",
-        "jobTitle": "Penguin",
+        "name": "Stephanie Jenka",
+        "jobTitle": "Chief People Officer",
         "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/0/08/South_Shetland-2016-Deception_Island%E2%80%93Chinstrap_penguin_%28Pygoscelis_antarctica%29_04.jpg"
+        "src": "https://i.ibb.co/nm064v6/dfddf.jpg"
     },
     {
         "id": 3,
@@ -33,11 +33,11 @@
     },
     {
         "id": 4,
-        "name": "Eugene",
-        "jobTitle": "Other Penguin",
+        "name": "Debora Jenkins",
+        "jobTitle": "Chief Marketing Officer",
         "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/king-penguin-portrait-falkland-islands-south-america-yefim-bam.jpg"
+        "src": "https://i.ibb.co/8DdWGQP/unnamed.jpg"
     },
     {
         "id": 5,

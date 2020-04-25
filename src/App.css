@@ -486,12 +486,17 @@ html {
 }
 
 .our-team-title {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: calc(2em + 1vw);
+  /* font-family: 'Rajdhani', sans-serif; */
+  font-size: calc(1.5em + 1vw);
   margin-top: 50px;
   margin-bottom: 30px;
   width: 100%;
   color: white;
+}
+
+#first-letter {
+  font-size: 1.75em !important;
+  font-weight: 600;
 }
 
 .our-team-descr {
@@ -608,7 +613,7 @@ html {
   font-weight: 400;
   padding-left: 5px;
   width: min-content;
-  min-width: 160px;
+  min-width: 165px;
 }
 
 .team-member-link {

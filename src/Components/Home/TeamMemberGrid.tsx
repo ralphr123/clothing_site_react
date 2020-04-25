@@ -34,27 +34,27 @@ const TeamMemberGrid = () => {
                     })}
                 </div>
             </div>
-            <div className="our-team mobile">
-                <div className="our-team-title center">
-                    <span>Our Team</span>
-                </div>
-                <div className="our-team-descr-cont center-horizontal">
-                    <div className="our-team-descr">
-                        <p>
+            <div className="our-team mobile center">
+                <div>
+                    {/* <div className="our-team-title baloo-tamma center">
+                            <span>That's our mission</span>
+                    </div> */}
+                    <div className="our-team-descr-cont center-horizontal">
+                        <div className="our-team-descr">
+                            <p>
+                                <span id="first-letter">W</span>omens coats are often regarded as an investment piece-- something durable and lasting and expected to be worn for many years to come. 
+                                As such, it's important that every coat purchase be treated with the long term in mind-- is this a style that i will like years from now; 
+                                is it a style that will still be in years from now?  <br/> <br/>
 
-                            Womens coats are often regarded as an investment piece-- something durable and lasting and expected to be worn for many years to come. 
-                            As such, it's important that every coat purchase be treated with the long term in mind-- is this a style that i will like years from now; 
-                            is it a style that will still be in years from now?  <br/> <br/>
-
-                            Coats for women are much like coats for men, but with a touch of lightness. One major investment piece for both sexes is the leather coat, 
-                            also known as leather jackets or the biker jacket. Here at LUDVIG, our coats and jackets range from timeless basics to expressive rarities. 
-                            Jacket hunting is an enjoyable sport-- get your next timepiece here!
-
-                        </p>
+                                Coats for women are much like coats for men, but with a touch of lightness. One major investment piece for both sexes is the leather coat, 
+                                also known as leather jackets or the biker jacket. Here at LUDVIG, our coats and jackets range from timeless basics to expressive rarities. 
+                                Jacket hunting is an enjoyable sport-- get your next timepiece here!
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className="our-team-image-container">
-                    {/* <img src={ourTeamImage} alt="knitting equipment" className="our-team-image" /> */}
+                    <div className="center-text" style={{ width: '100%' }}>
+                        <span className="our-team-title baloo-tamma">That's our mission</span>
+                    </div>
                 </div>
             </div>
         </div>
