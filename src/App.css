@@ -47,7 +47,7 @@ html {
   text-decoration: none;
   background-color: transparent;
   font-family: 'Quicksand', sans-serif;
-  font-size: calc(0.5em + 0.35vw);
+  font-size: calc(0.7em + 0.15vw);
   font-weight: 900;
   text-align: left;
   text-decoration: none;
@@ -153,11 +153,11 @@ html {
 }
 
 .absolute {
-  position: absolute;
+  position: absolute !important;
 }
 
 .relative {
-  position: relative;
+  position: relative !important;
 }
 
 .header {
@@ -292,6 +292,12 @@ html {
   z-index: 2;
 }
 
+.cart-icon {
+  cursor: pointer;
+  font-size: 17.5px !important;
+  margin-right: 5px;
+}
+
 /* Sidebar */
 .sidebar {
   margin: 0;
@@ -358,7 +364,6 @@ html {
 .expand-container {
   background: rgba(255, 255, 255, 1);
   border: 0.5px solid #d4d4d4;
-  position: absolute;
   font-size: calc(0.65em + 0.45vw);
   top: 75%;
   opacity: 0;
@@ -370,6 +375,7 @@ html {
 .expand-container:hover {
   background-color: #3b3b3b;
   color: white;
+  cursor: pointer;
 }
 
 .expand {
@@ -1091,4 +1097,51 @@ html {
     justify-content: center;
     align-items: center;
   }
+  .popup {
+    width: 100vw !important;
+  }
+  .popup-caption {
+    max-width: 250px !important;
+  }
+}
+
+/* Pop ups */
+.popup {
+  width: 600px;
+  max-width: 100%;
+  height: 90vh;
+}
+
+.popup-caption {
+  margin-bottom: 30px;
+  font-size: 1em;
+  max-width: 335px;
+}
+
+.popup-title {
+  font-family: 'Volkhov', serif;
+  font-size: 1.9em;
+}
+
+.popup-text-field {
+  padding-left: 2px;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-bottom: 1.1px solid #7c7979;
+  font-size: 15px;
+  /* transition: border-bottom 0.02s ease-in-out; */
+}
+
+.popup-text-field:focus {
+  border-bottom: 1.2px solid black;
+}
+
+.popup-button {
+  opacity: 1 !important;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #252525 !important;
+  color: white !important;
+  height: 30px;
 }

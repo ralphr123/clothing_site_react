@@ -5,7 +5,7 @@
         "jobTitle": "Chief Executive Officer",
         "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": "https://cdn.luxe.digital/media/2019/09/12090457/business-professional-dress-code-men-james-bond-suit-style-luxe-digital.jpg"
+        "src": "https://i.ibb.co/FY7fNRv/business-professional-dress-code-men-james-bond-suit-style-luxe-digital.jpg"
     },
     {
         "id": 1,
@@ -13,11 +13,11 @@
         "jobTitle": "Senior Vice President, Engineering",
         "shortDescription": "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": "https://i.pinimg.com/originals/f9/c4/0e/f9c40e3544fe9d1a8ee8db6525c2895a.jpg"
+        "src": "https://i.ibb.co/2PrzkCS/f9c40e3544fe9d1a8ee8db6525c2895a.jpg"
     },
     {
         "id": 2,
-        "name": "Stephanie Jenka",
+        "name": "Amelia Chandran",
         "jobTitle": "Chief People Officer",
         "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
@@ -29,7 +29,7 @@
         "jobTitle": "Chief Creative Officer",
         "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
         "fullDescription": "",
-        "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Pierre-Person.jpg"
+        "src": "https://i.ibb.co/LpKZSQW/Pierre-Person.jpg"
     },
     {
         "id": 4,
@@ -45,6 +45,6 @@
         "jobTitle": "Vice President, Customer Operations",
         "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolore magna aliqua...",
         "fullDescription": "",
-        "src": "https://i.pinimg.com/originals/25/48/31/25483183a26a96adcc2b5a4002eda6ca.jpg"
+        "src": "https://i.ibb.co/vDhLrHT/25483183a26a96adcc2b5a4002eda6ca.jpg"
     }
 ]

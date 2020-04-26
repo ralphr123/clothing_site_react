@@ -8,14 +8,18 @@ import { EthicalLabour, BetterForLess, SuperbQuality } from '../Components/OurBr
 import Navbar from '../Components/Navbar';
 import BrigherColors from '../Components/OurBrand/BrighterColors';
 
-const OurBrand = () => {
+interface OurBrandProps {
+    onClickPopup: (option: string) => void;
+}
+
+const OurBrand: React.FC<OurBrandProps> = (props) => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
 
     return (
         <FadeIn>
-            <Navbar className="dark-no-background" /> 
+            <Navbar className="dark-no-background" onClickPopup={props.onClickPopup}/> 
             <EthicalLabour />
             <ParallaxProvider>
                 <BetterForLess />

@@ -5,7 +5,11 @@ import FadeIn from 'react-fade-in';
 import { MembershipHeader, MembershipIntro, MembershipBenefits } from '../Components/Membership';
 import Navbar from '../Components/Navbar';
 
-const Membership = () => {
+interface MembershipProps {
+    onClickPopup: (option: string) => void;
+}
+
+const Membership: React.FC<MembershipProps> = (props) => {
     const [currentScrollHeight, setCurrentScrollHeight] = useState<number>(0);
     useEffect(() => {
         let unmounted: boolean = false;
@@ -34,7 +38,7 @@ const Membership = () => {
     return (
         <div>
             <FadeIn transitionDuration={300}>
-                <Navbar className={handleNavbarColor()}/>
+                <Navbar className={handleNavbarColor()} onClickPopup={props.onClickPopup}/>
                 <MembershipHeader /> 
                 <MembershipIntro />
                 <MembershipBenefits />

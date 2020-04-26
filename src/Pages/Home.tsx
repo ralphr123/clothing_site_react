@@ -10,7 +10,11 @@ import Navbar from '../Components/Navbar';
 import FadeIn from 'react-fade-in';
 import Particles from 'react-particles-js';
 
-const Home = () => {
+interface HomeProps {
+    onClickPopup: (option: string) => void;
+}
+
+const Home: React.FC<HomeProps> = (props) => {
     const [currentScrollHeight, setCurrentScrollHeight] = useState<number>(0);
     useEffect(() => {
         let unmounted: boolean = false;
@@ -38,11 +42,12 @@ const Home = () => {
         return "";
     }
 
+    
     return (
         <div className="no-overflow-x">
             <div className="full-page relative no-overflow">
                 <FadeIn>
-                    <Navbar className={handleNavbarColor()} />
+                    <Navbar className={handleNavbarColor()} onClickPopup={props.onClickPopup} />
                     <div className="full-page">
                         {currentScrollHeight < 250 ? (<ImageMain style={{ opacity }} />) : null}
                         <Particles className="black particles" params={(new Bubbles()).params} />

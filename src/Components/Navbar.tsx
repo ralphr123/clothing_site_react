@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 
 // Icons
 import SearchIcon from '@material-ui/icons/Search';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 interface NavbarProps {
     className?: string;
+    onClickPopup?: (option: string) => void;
 }
 
 const Navbar: React.FC<NavbarProps> = (props) => {
@@ -16,16 +18,16 @@ const Navbar: React.FC<NavbarProps> = (props) => {
     const color: { color: string } = { color: getColor()};
     return (
         <div style={{ width: '100vw', position: 'relative' }}>
-            <div className="navbar-container full-width">
+            <div className="navbar-container full-width unselectable">
                 <div className={`navbar center ${props.className} full-width`}>
                         <Link className="logo-container no-text-decoration" to='/'>
                             <span className="logo">Ludvig</span>
                         </Link>
                         <div className="register-container center">
-                            <span className="register">Sign up</span>
+                            <span onClick={() => props.onClickPopup!('signup')} className="register">Sign up</span>
                         </div>
                         <div className="register-container center">
-                            <span className="register">Login</span>
+                            <span onClick={() => props.onClickPopup!('login')} className="register">Login</span>
                         </div>
                         <div className="register-container center">
                             <span className="register">Cart</span>

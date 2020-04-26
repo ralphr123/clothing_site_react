@@ -5,14 +5,18 @@ import Navbar from '../Components/Navbar';
 // Components
 import { ProductGrid, SideMenu, CatalogNavbar } from '../Components/BrowseCatalog';
 
-const BrowseCatalog = () => {
+interface BrowseCatalogProps {
+    onClickPopup: (option: string) => void;
+}
+
+const BrowseCatalog: React.FC<BrowseCatalogProps> = (props) => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
     
       return (
             <FadeIn>
-                <Navbar className="dark" />
+                <Navbar className="dark" onClickPopup={props.onClickPopup}/>
                 <CatalogNavbar />
                 <div className="browse-catalog-container mobile wrap center-horizontal">
                     <SideMenu />
