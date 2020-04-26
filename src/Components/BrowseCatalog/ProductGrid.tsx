@@ -9,7 +9,7 @@ const ProductGrid = () => {
         <div className="product-grid">
             <div className="product-grid-title" >
                 <p>WOMEN'S CLOTHING | LUDVIG</p>
-                <span>Shop our full women's clothing line right here. You'll find dresses, jeans and tops in a variety of fits and styles.</span>
+                <span>This site is a demo, these are not for sale. All clothing and images belongs to Guess.</span>
             </div>
             <div className="wrap flex mobile-center">
                 {Products.map((product, index) => {

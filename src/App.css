@@ -1030,11 +1030,11 @@ html {
   padding-bottom: 50px;
 }
 
-#side-menu-two {
+.side-menu-two {
   margin-left: 15px;
 }
 
-#mobile-title {
+.mobile-title {
   font-weight: 600;
 }
 
@@ -1102,6 +1102,9 @@ html {
   }
   .popup-caption {
     max-width: 250px !important;
+  }
+  #mobile-margin {
+    margin-left: 10px;
   }
 }
 

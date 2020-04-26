@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 // Icons
 import SearchIcon from '@material-ui/icons/Search';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+// import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 interface NavbarProps {
     className?: string;
