@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // Icons
 import SearchIcon from '@material-ui/icons/Search';
-// import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+
+//Components
+import { Link } from 'react-router-dom';
+
 
 interface NavbarProps {
     className?: string;
@@ -12,7 +14,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = (props) => {
     const getColor = (): string => { // NEED TO CHANGE
-        if (props.className === 'dark' || props.className === "dark-no-background") return 'black';
+        if (props.className === 'dark' || props.className === "dark-no-background") return 'color-black';
         return '';
     }
     const color: { color: string } = { color: getColor()};
@@ -20,27 +22,30 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         <div style={{ width: '100vw', position: 'relative' }}>
             <div className="navbar-container full-width unselectable">
                 <div className={`navbar center ${props.className} full-width`}>
-                        <Link className="logo-container no-text-decoration" to='/'>
-                            <span className="logo">Ludvig</span>
-                        </Link>
-                        <div className="register-container center">
-                            <span onClick={() => props.onClickPopup!('signup')} className="register">Sign up</span>
-                        </div>
-                        <div className="register-container center">
-                            <span onClick={() => props.onClickPopup!('login')} className="register">Login</span>
-                        </div>
-                        <div className="register-container center">
-                            <span className="register">Cart</span>
-                        </div>
-                        <div className="register-container center">
-                            <SearchIcon fontSize="default" color="inherit" className="search-icon" />
-                        </div>
+                    <Link className="logo-container no-text-decoration" to='/'>
+                        <span className="logo">Ludvig</span>
+                    </Link>
+                    <div className="register-container center">
+                        <span onClick={() => props.onClickPopup!('signup')} className="register">Sign up</span>
+                    </div>
+                    <div className="register-container center">
+                        <span onClick={() => props.onClickPopup!('login')} className="register">Login</span>
+                    </div>
+                    <div className="register-container center">
+                        <span className="register">Cart</span>
+                    </div>
+                    <div className="register-container center">
+                        <SearchIcon fontSize="default" color="inherit" className="search-icon" />
+                    </div>
                 </div>
             </div>
             <div className="change-language unselectable full-width">
-                <div className="change-language-container center" style={color}>
-                    <img src="https://i.ibb.co/c1GPxrr/51h-LPmry-RHL-AC-SL1500.jpg" className="language-image" alt="Canadian flag" /><span>EN</span>
-                    <img src="https://i.ibb.co/wyJ44sW/arrow-png-white-16.png" className="select-image" alt="down arrow" /> {/* MAKE INTO ICON*/}
+                <div>
+                    <div className={`${props.className?.includes('dark') ? 'color-black' : ''} change-language-container center`}>
+                        <div className="fixed">
+                            <img src="https://i.ibb.co/c1GPxrr/51h-LPmry-RHL-AC-SL1500.jpg" className="language-image" alt="Canadian flag" /><span>FR</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

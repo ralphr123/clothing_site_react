@@ -16,7 +16,7 @@ const Login: React.FC<LoginProps> = (props) => {
                 <p className="popup-caption">Sign in to receive recommendations, personalize your homepage, and follow artists and styles that you love.</p>
                 <div className="baloo-tamma" style={{ lineHeight: 3.65 }}>
                     <input placeholder="email" className="popup-text-field"></input><br/>
-                    <input placeholder="password" className="popup-text-field"></input><br/>
+                    <input type="password" placeholder="password" className="popup-text-field"></input><br/>
                 </div>
                 <div className="center" style={{ width: '100%' }}>
                     <Button onClick={props.onClickSubmit} className="relative popup-button" width={225}>Sign in</Button>

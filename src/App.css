@@ -160,6 +160,10 @@ html {
   position: relative !important;
 }
 
+.fixed {
+  position: fixed !important;
+}
+
 .header {
   font-family: 'Rajdhani', sans-serif;
   font-size: calc(3em + 1vw);
@@ -252,6 +256,9 @@ html {
   cursor: pointer;
 }
 
+.color-black {
+  color: black !important;
+}
 
 .register-container {
   margin: 0;
