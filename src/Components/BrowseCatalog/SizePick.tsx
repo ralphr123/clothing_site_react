@@ -5,9 +5,9 @@ const SizePick = () => {
 
     return (
         <div className="center margin-bottom">
-            {sizes.map(size => {
+            {sizes.map((size, index) => {
                 return (
-                    <div className="size-option center unselectable">
+                    <div className="size-option center unselectable" key={index}>
                         {size}
                     </div>
                 );

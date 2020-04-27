@@ -9,9 +9,9 @@ const ColorPick: React.FC<ColorPickProps> = (props) => {
 
     return (
         <div className="center margin-bottom">
-            {colors.map(color => {
+            {colors.map((color, index) => {
                 return (
-                    <div className="color-option" style={{backgroundColor: color}} />
+                    <div className="color-option" style={{backgroundColor: color}} key={index} />
                 );
             })}
         </div>

@@ -1167,6 +1167,14 @@ html {
   /* transition: border-bottom 0.02s ease-in-out; */
 }
 
+.text-field-error {
+  border-bottom: 1.1px solid red !important;
+}
+
+.text-field-error:focus {
+  border-bottom: 1.2px solid red !important;
+}
+
 .popup-text-field:focus {
   border-bottom: 1.2px solid black;
 }
@@ -1227,4 +1235,16 @@ html {
 
 .add-to-cart {
   padding: 60px;
+}
+
+.error {
+  color: red;
+}
+
+.change-qty {
+  font-size: 16.5px !important;
+}
+
+.change-qty:hover {
+  cursor: pointer;
 }

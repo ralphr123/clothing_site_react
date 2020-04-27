@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = (props) => {
     return (
-        <div onClick={props.onClick} className={`${props.className} expand-container baloo-tamma center`} style={{ width: props.width }}>
+        <div onClick={props.onClick} className={`${props.className} expand-container baloo-tamma center unselectable`} style={{ width: props.width }}>
             <span className="expand" >{props.children}</span>
         </div>
     )

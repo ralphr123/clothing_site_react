@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 
@@ -15,6 +15,17 @@ const App = () => {
   const [isOpenPopup, setIsOpenPopup] = useState<boolean>(false);
   const [option, setOption] = useState<string>('')
   const [productData, setProductData] = useState<{src: string, description: string}>({src: '', description: ''});
+  const [password, setPassword] = useState<string>('');
+  const [confirmPassword, setConfirmPassword] = useState<string>('');
+
+  const handleOnChangePassword = (e: ChangeEvent<HTMLInputElement>) => {
+      setPassword(e.target.value);
+  }
+  
+  const handleOnChangeConfirmPassword = (e: ChangeEvent<HTMLInputElement> ) => {
+      setConfirmPassword(e.target.value);
+      console.log(confirmPassword);
+  }
 
   const handleOnClickPopup = (optionText: string): void => {
     setIsOpenPopup(true);
@@ -74,5 +85,5 @@ const App = () => {
     </Router>
   );
 }
-
+// onChangePassword={handleOnChangePassword} onChangeConfirmPassword={handleOnChangeConfirmPassword} password={password} confirmPassword={confirmPassword} 
 export default App;
