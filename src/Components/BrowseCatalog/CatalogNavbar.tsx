@@ -1,8 +1,6 @@
 import React from 'react';
 
 const CatalogNavbar = () => {
-    const marginRight: {marginRight: number} = {marginRight: 10};
-
     return (
         <div className="catalog-navbar-container full-width">
             <div className="catalog-navbar center full-width unselectable">

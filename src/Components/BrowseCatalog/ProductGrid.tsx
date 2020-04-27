@@ -4,12 +4,16 @@ import Products from '../../Data/Products.json';
 // Components
 import Product from '../Product';
 
-const ProductGrid = () => {
+interface ProductGridProps {
+    onClickAddToCart?: (src: string, description: string) => void;
+}
+
+const ProductGrid: React.FC<ProductGridProps> = (props) => {
     return (
         <div className="product-grid">
             <div className="product-grid-title" >
                 <p>WOMEN'S CLOTHING | LUDVIG</p>
-                <span>This site is a demo, these are not for sale. All clothing and images belongs to Guess.</span>
+                <p>This site is a demo, these are not for sale. All clothing and images belong to Guess.</p>
             </div>
             <div className="wrap flex mobile-center">
                 {Products.map((product, index) => {
@@ -24,6 +28,7 @@ const ProductGrid = () => {
                             contClass={product.contClass}
                             contId={product.contId}
                             key={index}
+                            onClick={() => props.onClickAddToCart!(product.src, product.description)}
                         />
                     )
                 })}

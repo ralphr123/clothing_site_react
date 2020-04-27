@@ -13,11 +13,6 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = (props) => {
-    const getColor = (): string => { // NEED TO CHANGE
-        if (props.className === 'dark' || props.className === "dark-no-background") return 'color-black';
-        return '';
-    }
-    const color: { color: string } = { color: getColor()};
     return (
         <div style={{ width: '100vw', position: 'relative' }}>
             <div className="navbar-container full-width unselectable">
