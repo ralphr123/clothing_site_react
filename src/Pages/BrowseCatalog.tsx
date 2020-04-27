@@ -7,7 +7,8 @@ import { ProductGrid, SideMenu, CatalogNavbar } from '../Components/BrowseCatalo
 
 interface BrowseCatalogProps {
     onClickPopup: (option: string) => void;
-    onClickAddToCart?: (src: string, description: string) => void;
+    onClickAddToCart: (src: string, description: string) => void;
+    cart: number;
 }
 
 const BrowseCatalog: React.FC<BrowseCatalogProps> = (props) => {
@@ -17,7 +18,7 @@ const BrowseCatalog: React.FC<BrowseCatalogProps> = (props) => {
     
       return (
             <FadeIn>
-                <Navbar className="dark" onClickPopup={props.onClickPopup}/>
+                <Navbar className="dark" onClickPopup={props.onClickPopup} cart={props.cart} />
                 <CatalogNavbar />
                 <div className="browse-catalog-container mobile wrap center-horizontal">
                     <SideMenu />

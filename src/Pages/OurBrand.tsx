@@ -10,6 +10,7 @@ import BrigherColors from '../Components/OurBrand/BrighterColors';
 
 interface OurBrandProps {
     onClickPopup: (option: string) => void;
+    cart: number;
 }
 
 const OurBrand: React.FC<OurBrandProps> = (props) => {
@@ -19,7 +20,7 @@ const OurBrand: React.FC<OurBrandProps> = (props) => {
 
     return (
         <FadeIn>
-            <Navbar className="dark-no-background" onClickPopup={props.onClickPopup}/> 
+            <Navbar className="dark-no-background" onClickPopup={props.onClickPopup} cart={props.cart} /> 
             <EthicalLabour />
             <ParallaxProvider>
                 <BetterForLess />

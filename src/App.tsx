@@ -7,7 +7,7 @@ import { Home, OurBrand, Membership, BrowseCatalog } from './Pages';
 import Footer from './Components/Footer';
 
 // Components
-import { SignUp, Login, AddToCart } from './Components/Popups';
+import { SignUp, Login, AddToCart, Cart } from './Components/Popups';
 import Dialog from '@material-ui/core/Dialog';
 import FadeIn from 'react-fade-in';
 
@@ -15,6 +15,7 @@ const App = () => {
   const [isOpenPopup, setIsOpenPopup] = useState<boolean>(false);
   const [option, setOption] = useState<string>('')
   const [productData, setProductData] = useState<{src: string, description: string}>({src: '', description: ''});
+  const [cart, setCart] = useState<{src: string, description: string, color: string, size: string, qty: string}[]>([])
 
   const handleOnClickPopup = (optionText: string): void => {
     setIsOpenPopup(true);
@@ -36,8 +37,17 @@ const App = () => {
   const handleOnClickAddToCart = (srcText: string, descriptionText: string): void => {
     handleOnClickPopup('addtocart');
     setProductData({src: srcText, description: descriptionText});
-    console.log(option);
-    console.log(productData.src);
+  }
+
+  const handleAddToCart = (colorText: string, sizeText: string, quantityText: string): void => {
+    setCart(cart => [...cart, {
+      src: productData.src, 
+      description: productData.description,
+      color: colorText,
+      size: sizeText,
+      qty: quantityText
+    }]);
+    handleOnClosePopup();
   }
 
   return (
@@ -45,19 +55,19 @@ const App = () => {
       <div className="App" >
         <Switch>
           <Route path="/our-brand">
-            <OurBrand onClickPopup={handleOnClickPopup} />
+            <OurBrand onClickPopup={handleOnClickPopup} cart={cart.length} />
             <Footer />
           </Route>
           <Route path="/membership">
-            <Membership onClickPopup={handleOnClickPopup} />
+            <Membership onClickPopup={handleOnClickPopup} cart={cart.length} />
             <Footer />
           </Route>
           <Route path="/browse-catalog">
-            <BrowseCatalog onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} />
+            <BrowseCatalog onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} cart={cart.length} />
             <Footer />
           </Route>
           <Route path="/">
-            <Home onClickPopup={handleOnClickPopup} />
+            <Home onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} cart={cart.length} />
             <Footer />
           </Route>
         </Switch>
@@ -68,11 +78,12 @@ const App = () => {
         >
           {(option === 'signup') ? <FadeIn><SignUp onClickLogin={handleOnClickLogin} /></FadeIn> : null}
           {(option === 'login') ? <FadeIn><Login onClickSignUp={handleOnClickSignUp} /></FadeIn> : null}
-          {(option === 'addtocart') ? <FadeIn><AddToCart src={productData.src} name={productData.description} /></FadeIn> : null}
+          {(option === 'addtocart') ? <FadeIn><AddToCart src={productData.src} name={productData.description} onClick={handleAddToCart} /></FadeIn> : null}
+          {(option === 'cart') ? <FadeIn><Cart handleClosePopup={handleOnClosePopup} cart={cart} /></FadeIn> : null}
         </Dialog>
       </div>
     </Router>
   );
 }
-// onChangePassword={handleOnChangePassword} onChangeConfirmPassword={handleOnChangeConfirmPassword} password={password} confirmPassword={confirmPassword} 
+
 export default App;

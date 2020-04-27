@@ -5,7 +5,7 @@ import Products from '../../Data/Products.json';
 import Product from '../Product';
 
 interface ProductGridProps {
-    onClickAddToCart?: (src: string, description: string) => void;
+    onClickAddToCart: (src: string, description: string) => void;
 }
 
 const ProductGrid: React.FC<ProductGridProps> = (props) => {
@@ -28,7 +28,7 @@ const ProductGrid: React.FC<ProductGridProps> = (props) => {
                             contClass={product.contClass}
                             contId={product.contId}
                             key={index}
-                            onClick={() => props.onClickAddToCart!(product.src, product.description)}
+                            onClick={() => props.onClickAddToCart(product.src, product.description)}
                         />
                     )
                 })}

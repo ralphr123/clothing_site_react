@@ -7,6 +7,7 @@ import Navbar from '../Components/Navbar';
 
 interface MembershipProps {
     onClickPopup: (option: string) => void;
+    cart: number;
 }
 
 const Membership: React.FC<MembershipProps> = (props) => {
@@ -38,7 +39,7 @@ const Membership: React.FC<MembershipProps> = (props) => {
     return (
         <div>
             <FadeIn transitionDuration={300}>
-                <Navbar className={handleNavbarColor()} onClickPopup={props.onClickPopup}/>
+                <Navbar className={handleNavbarColor()} onClickPopup={props.onClickPopup} cart={props.cart} />
                 <MembershipHeader /> 
                 <MembershipIntro />
                 <MembershipBenefits />

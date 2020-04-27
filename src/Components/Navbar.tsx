@@ -9,7 +9,8 @@ import { Link } from 'react-router-dom';
 
 interface NavbarProps {
     className?: string;
-    onClickPopup?: (option: string) => void;
+    onClickPopup: (option: string) => void;
+    cart: number;
 }
 
 const Navbar: React.FC<NavbarProps> = (props) => {
@@ -21,13 +22,13 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                         <span className="logo">Ludvig</span>
                     </Link>
                     <div className="register-container center">
-                        <span onClick={() => props.onClickPopup!('signup')} className="register">Sign up</span>
+                        <span onClick={() => props.onClickPopup('signup')} className="register">Sign up</span>
                     </div>
                     <div className="register-container center">
-                        <span onClick={() => props.onClickPopup!('login')} className="register">Login</span>
+                        <span onClick={() => props.onClickPopup('login')} className="register">Login</span>
                     </div>
                     <div className="register-container center">
-                        <span className="register">Cart</span>
+                        <span onClick={() => props.onClickPopup('cart')} className="register"><span id="cart-number">{props.cart}</span>&nbsp;Cart</span>
                     </div>
                     <div className="register-container center">
                         <SearchIcon fontSize="default" color="inherit" className="search-icon" />

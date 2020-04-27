@@ -20,7 +20,13 @@ const Login: React.FC<LoginProps> = (props) => {
                     <TextField type="password" placeholder="password" width="250px"/>
                 </div>
                 <div className="center" style={{ width: '100%' }}>
-                    <Button onClick={props.onClickSubmit} className="relative popup-button" width={225}>Sign in</Button>
+                    <Button 
+                        onClick={props.onClickSubmit} 
+                        className="relative popup-button" 
+                        width={225}
+                    >
+                        Sign in
+                    </Button>
                 </div>
                 <span>Don't have an account? &nbsp;<span onClick={props.onClickSignUp} className="text-link unselectable" >Sign up</span></span>
             </div>
