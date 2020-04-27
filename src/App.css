@@ -1191,6 +1191,19 @@ html {
   height: 30px;
 }
 
+#popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px !important;
+  color: #6b6868;
+  z-index: 2;
+}
+
+#popup-close:hover {
+  cursor: pointer;
+}
+
 #product-image {
   height: 400px;
   min-width: 290px;

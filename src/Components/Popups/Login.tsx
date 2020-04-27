@@ -10,14 +10,28 @@ interface LoginProps {
 }
 
 const Login: React.FC<LoginProps> = (props) => {
+    const handleOnChangeText = (): void => {
+
+    }
+
     return (
         <div className="popup center">
             <div className="center-text">
                 <span className="popup-title">Welcome back.</span>
                 <p className="popup-caption">Sign in to receive recommendations, personalize your homepage, and follow artists and styles that you love.</p>
                 <div className="baloo-tamma" style={{ lineHeight: 3.65 }}>
-                    <TextField type="text" placeholder="email" width="250px" /><br/>
-                    <TextField type="password" placeholder="password" width="250px"/>
+                    <TextField 
+                        type="text" 
+                        placeholder="email"
+                        width="250px"
+                        onChange={handleOnChangeText} 
+                    /><br/>
+                    <TextField 
+                        type="password" 
+                        placeholder="password" 
+                        width="250px"
+                        onChange={handleOnChangeText}
+                    />
                 </div>
                 <div className="center" style={{ width: '100%' }}>
                     <Button 

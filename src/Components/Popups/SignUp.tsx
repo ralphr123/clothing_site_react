@@ -33,6 +33,10 @@ const SignUp: React.FC<SignUpProps> = (props) => {
         setConfirmPassword(e.target.value);
     }
 
+    const handleOnChangeEmail = (): void => {
+
+    }
+
     return (
         <div className="popup center">
             <div className="center-text">
@@ -43,6 +47,7 @@ const SignUp: React.FC<SignUpProps> = (props) => {
                         type="text" 
                         placeholder="email" 
                         width="250px" 
+                        onChange={handleOnChangeEmail}
                     /><br/>
                     <TextField 
                         type="password" 

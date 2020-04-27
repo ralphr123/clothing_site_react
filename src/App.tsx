@@ -6,6 +6,9 @@ import './App.css';
 import { Home, OurBrand, Membership, BrowseCatalog } from './Pages';
 import Footer from './Components/Footer';
 
+// Icons
+import CloseIcon from '@material-ui/icons/Close';
+
 // Components
 import { SignUp, Login, AddToCart, Cart } from './Components/Popups';
 import Dialog from '@material-ui/core/Dialog';
@@ -76,6 +79,7 @@ const App = () => {
           open={isOpenPopup}
           maxWidth="xl" 
         >
+          <CloseIcon id="popup-close" onClick={handleOnClosePopup} />
           {(option === 'signup') ? <FadeIn><SignUp onClickLogin={handleOnClickLogin} /></FadeIn> : null}
           {(option === 'login') ? <FadeIn><Login onClickSignUp={handleOnClickSignUp} /></FadeIn> : null}
           {(option === 'addtocart') ? <FadeIn><AddToCart src={productData.src} name={productData.description} onClick={handleAddToCart} /></FadeIn> : null}

@@ -6,7 +6,7 @@ interface TextFieldProps { // ADD NUMBER REGEX PROP
     width: string;
     center?: boolean;
     value?: string;
-    onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+    onChange: (e: ChangeEvent<HTMLInputElement>) => void;
     error?: boolean;
 }
 
@@ -18,7 +18,7 @@ const TextField: React.FC<TextFieldProps> = (props) => {
             className={`${props.error ? 'text-field-error' : ''} popup-text-field`}
             style={props.center ? {width: props.width, textAlign: 'center'} : { width: props.width }}
             value={props.value}
-            onChange={(e: ChangeEvent<HTMLInputElement>) => props.onChange!(e)}
+            onChange={(e: ChangeEvent<HTMLInputElement>) => props.onChange(e)}
         />
     );
 }
