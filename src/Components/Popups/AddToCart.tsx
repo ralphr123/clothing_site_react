@@ -52,7 +52,7 @@ const AddToCart: React.FC<AddToCartProps> = (props) => {
             <div className="center-text total-height baloo-tamma" >
                 <p id="product-title">{props.name}</p>
                 <p>Color</p>
-                <ColorPick alot={false} />
+                <ColorPick />
                 <p>Size</p>
                 <SizePick />
                 <p>Quantity</p>

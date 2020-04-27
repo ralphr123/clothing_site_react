@@ -1,10 +1,10 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 
 interface ColorPickProps {
-    alot: boolean;
+    alot?: boolean;
 }
 
-const ColorPick: React.FC<ColorPickProps> = (props) => {
+const ColorPick: React.FC<ColorPickProps> = () => {
     const colors: string[] = ['black', 'grey', 'white', 'navy', 'green', 'turquoise', 'yellow', 'pink'];
 
     return (

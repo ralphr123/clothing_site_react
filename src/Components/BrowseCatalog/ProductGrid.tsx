@@ -13,7 +13,7 @@ const ProductGrid: React.FC<ProductGridProps> = (props) => {
         <div className="product-grid">
             <div className="product-grid-title" >
                 <p>WOMEN'S CLOTHING | LUDVIG</p>
-                <p>This site is a demo, these are not for sale. All clothing and images belong to Guess.</p>
+                <span>This site is a demo, these are not for sale. All clothing and images belong to Guess.</span>
             </div>
             <div className="wrap flex mobile-center">
                 {Products.map((product, index) => {
