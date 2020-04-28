@@ -247,7 +247,7 @@ html {
 /* Navbar */
 .navbar-container {
   position: absolute;
-  z-index: 99;
+  z-index: 999;
 }
 
 .navbar {
@@ -270,6 +270,7 @@ html {
   position: relative;
   z-index: 3;
   margin-right: 3vw;
+  z-index: 999;
 }
 
 .change-language-container:hover {
@@ -296,7 +297,7 @@ html {
   /* padding-left: calc(0.82em + 0.22vw); */
   position: relative;
   font-family: 'Unica One', cursive;
-  z-index: 2;
+  z-index: 999;
 }
 
 .logo {
@@ -316,14 +317,14 @@ html {
   position: relative;
   height: 6vh;
   width: calc(3em + 3vw);
-  z-index: 2;
+  z-index: 999;
 }
 
 .register {
   margin-top: 4px;
   font-size: calc(0.82em + 0.22vw);
   cursor: pointer;
-  z-index: 2;
+  z-index: 999;
 }
 
 .register:after {    
@@ -347,7 +348,7 @@ html {
 
 .search-icon {
   cursor: pointer;
-  z-index: 2;
+  z-index: 999;
 }
 
 .cart-icon {
