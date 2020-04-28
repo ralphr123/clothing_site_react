@@ -392,7 +392,7 @@ html {
   height: auto;
   min-height: 88vh;
   flex-direction: column;
-  z-index: -1;
+  z-index: -2;
 }
 
 /* Product */
