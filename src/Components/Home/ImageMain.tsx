@@ -1,9 +1,5 @@
 import React from 'react';
 
-
-// Images
-import MainImage from '../../Images/MainImage.png';
-
 interface ImageMainProps {
     style?: React.CSSProperties;
 }
@@ -11,7 +7,7 @@ interface ImageMainProps {
 const ImageMain: React.FC<ImageMainProps> = (props) => {
     return (
         <div className="main-image">
-            <img style={ props.style } className="main-image" alt="lady" src={MainImage} />
+            <img style={ props.style } className="main-image" alt="lady" src='https://i.ibb.co/wgQqxsJ/Main-Image.png' />
         </div>
     )
 }
