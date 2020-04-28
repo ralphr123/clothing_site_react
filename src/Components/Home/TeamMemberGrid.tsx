@@ -42,13 +42,13 @@ const TeamMemberGrid = () => {
                     <div className="our-team-descr-cont center-horizontal">
                         <div className="our-team-descr">
                             <p>
-                                <span id="first-letter">W</span>omens coats are often regarded as an investment piece-- something durable and lasting and expected to be worn for many years to come. 
-                                As such, it's important that every coat purchase be treated with the long term in mind-- is this a style that i will like years from now; 
-                                is it a style that will still be in years from now?  <br/> <br/>
+                                <span id="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br/> <br/>
 
-                                Coats for women are much like coats for men, but with a touch of lightness. One major investment piece for both sexes is the leather coat, 
-                                also known as leather jackets or the biker jacket. Here at LUDVIG, our coats and jackets range from timeless basics to expressive rarities. 
-                                Jacket hunting is an enjoyable sport-- get your next timepiece here!
+                                Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Nulla pharetra diam sit amet. Nibh 
+                                ipsum consequat nisl vel pretium lectus quam. Tellus at urna condimentum mattis pellentesque id nibh tortor
+                                id. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Augue ut lectus arcu bibendum at.
                             </p>
                         </div>
                     </div>
