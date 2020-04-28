@@ -247,7 +247,7 @@ html {
 /* Navbar */
 .navbar-container {
   position: absolute;
-  z-index: 2;
+  z-index: 99;
 }
 
 .navbar {
@@ -392,6 +392,7 @@ html {
   height: auto;
   min-height: 88vh;
   flex-direction: column;
+  z-index: -1;
 }
 
 /* Product */
