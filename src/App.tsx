@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 
 // Pages
-import { Home, OurBrand, Membership, BrowseCatalog } from './Pages';
+import { Home, OurBrand, Membership, BrowseCatalog, NotFound } from './Pages';
 import Footer from './Components/Footer';
 
 // Icons
@@ -69,8 +69,12 @@ const App = () => {
             <BrowseCatalog onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} cart={cart.length} />
             <Footer />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} cart={cart.length} />
+            <Footer />
+          </Route>
+          <Route path="*">
+            <NotFound onClickPopup={handleOnClickPopup} cart={cart.length} />
             <Footer />
           </Route>
         </Switch>

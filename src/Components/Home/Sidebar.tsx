@@ -9,7 +9,7 @@ interface SideBarProps {
 
 const SideBar: React.FC<SideBarProps> = (props) => {
     return (
-        <div className={props.className}>
+        <div className={`${props.className} unselectable`}>
             <Link className="no-text-decoration" to="/browse-catalog" >
                 <span className="list-item">Browse Catalog</span>
             </Link>

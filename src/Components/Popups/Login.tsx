@@ -33,7 +33,7 @@ const Login: React.FC<LoginProps> = (props) => {
                         onChange={handleOnChangeText}
                     />
                 </div>
-                <div className="center" style={{ width: '100%' }}>
+                <div className="center total-width">
                     <Button 
                         onClick={props.onClickSubmit} 
                         className="relative popup-button" 

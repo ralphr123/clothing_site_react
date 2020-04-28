@@ -4,6 +4,9 @@ import '../App.css';
 // Models
 import { Bubbles } from '../Models/Bubbles';
 
+// Icons
+import MouseOutlinedIcon from '@material-ui/icons/MouseOutlined';
+
 // Components
 import { ImageMain, SideBar, NewArrivals, TeamMemberGrid } from '../Components/Home';
 import Navbar from '../Components/Navbar';
@@ -54,6 +57,10 @@ const Home: React.FC<HomeProps> = (props) => {
                         {currentScrollHeight < 250 ? (<ImageMain style={{ opacity }} />) : null}
                         <Particles className="black particles" params={(new Bubbles()).params} />
                         {currentScrollHeight < window.screen.height*0.5 ? (<SideBar className="sidebar"/>) : null}
+                        <div id="scroll-container" style={{ opacity }}>
+                            <MouseOutlinedIcon id="scroll" className="absolute" />
+                            <span id="scroll-text" className="absolute baloo-tamma">scroll</span>
+                        </div>
                     </div>
                 </FadeIn>
             </div>

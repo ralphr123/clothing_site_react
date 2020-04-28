@@ -68,8 +68,14 @@ const SignUp: React.FC<SignUpProps> = (props) => {
                 </div>
                 {matchError ? (<><span className="error">{notMatchedString}</span><br/></>) : null}
                 {lengthError ? (<span className="error">{lengthString}</span>) : null}
-                <div className="center" style={{ width: '100%' }}>
-                    <Button onClick={props.onClickSubmit} className="relative popup-button" width={225}>Sign up</Button>
+                <div className="center total-width">
+                    <Button 
+                        onClick={props.onClickSubmit} 
+                        className="relative popup-button" 
+                        width={225}
+                    >
+                        Sign up
+                    </Button>
                 </div>
                 <span>Already have an account? &nbsp;<span onClick={props.onClickLogin} className="text-link unselectable" >Sign in</span></span>
             </div>

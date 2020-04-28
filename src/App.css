@@ -194,6 +194,48 @@ html {
   color: black;
 }
 
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0.65; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.65; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.65; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.65; }
+  100% { opacity:1; }
+}
+
+#scroll-container {
+  /* position: fixed; */
+  color: white;
+  -webkit-animation: flickerAnimation 2s infinite;
+  -moz-animation: flickerAnimation 2s infinite;
+  -o-animation: flickerAnimation 2s infinite;
+   animation: flickerAnimation 2s infinite;
+}
+
+#scroll {
+  left: 50%;
+  bottom: 42.5px;
+  font-size: 28px !important;
+  padding-left: 5px;
+}
+
+#scroll-text {
+  left: 50%;
+  bottom: 15px;
+}
+
 /* ImageMain */
 .main-image {
   width: calc(18em + 18vw);
@@ -1302,4 +1344,18 @@ html {
   border-bottom: 1.1px solid #ccc;
   border-top: 1.1px solid #ccc;
   padding: 8px 0 8px 0;
+}
+
+#not-found {
+  font-size: 3em;
+}
+
+.go-home {
+  font-size: 1.25em;
+  height: 35px;
+}
+
+.not-found-container {
+  height: 350px;
+  padding-top: 12.5vh;
 }
