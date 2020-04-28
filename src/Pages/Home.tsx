@@ -50,9 +50,9 @@ const Home: React.FC<HomeProps> = (props) => {
     
     return (
         <div className="no-overflow-x">
+            <Navbar className={handleNavbarColor()} onClickPopup={props.onClickPopup} cart={props.cart} />
             <div className="full-page relative no-overflow">
                 <FadeIn>
-                    <Navbar className={handleNavbarColor()} onClickPopup={props.onClickPopup} cart={props.cart} />
                     <div className="full-page">
                         {currentScrollHeight < 250 ? (<ImageMain style={{ opacity }} />) : null}
                         <Particles className="black particles" params={(new Bubbles()).params} />
