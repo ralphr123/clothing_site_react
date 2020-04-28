@@ -1,6 +1,8 @@
 import React, { useLayoutEffect } from 'react';
-import { Parallax, useController } from 'react-scroll-parallax';
 
+// Components
+import { Parallax, useController } from 'react-scroll-parallax';
+import { Link } from 'react-router-dom';
 
 const SuperbQuality = () => {
     const { parallaxController } = useController();
@@ -21,11 +23,12 @@ const SuperbQuality = () => {
                             <p className="our-brand-title baloo-tamma">A vow to superb quality</p>
                             <p className="our-brand-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
-                        <div className="superb-quality-button">
+                        
+                        <Link className="superb-quality-button no-text-decoration" to="/">
                             <div className="browse-catalog-button baloo-tamma center">
                                 <span className="expand" >BROWSE CATALOG</span>
                             </div>
-                        </div>
+                        </Link>
                     </div>
             </Parallax>
         </div>
