@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import './App.css';
 
 // Pages
@@ -69,14 +69,17 @@ const App = () => {
             <BrowseCatalog onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} cart={cart.length} />
             <Footer />
           </Route>
-          <Route exact path="/">
+          <Route path="/">
             <Home onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} cart={cart.length} />
             <Footer />
+          </Route>
+          {/* <Route path="index.html">
+            <Redirect exact to="/" />
           </Route>
           <Route path="*">
             <NotFound onClickPopup={handleOnClickPopup} cart={cart.length} />
             <Footer />
-          </Route>
+          </Route> */}
         </Switch>
         <Dialog 
           onClose={handleOnClosePopup} 
