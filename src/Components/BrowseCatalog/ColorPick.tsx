@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 interface ColorPickProps {
-    alot?: boolean;
-    onClick: (color: string) => void;
+    lineBreak?: boolean;
+    onClick?: (color: string) => void;
 }
 
 const ColorPick: React.FC<ColorPickProps> = (props) => {
@@ -16,16 +16,21 @@ const ColorPick: React.FC<ColorPickProps> = (props) => {
     }
 
     return (
-        <div className="center margin-bottom">
+        <div className={`center ${props.lineBreak ? "craig wrap" : "margin-bottom"}`}>
             {colors.map((color, index) => {
                 return (
-                    <div 
-                        className="color-option" 
-                        style={{backgroundColor: color}} 
-                        key={index}
-                        id={`${index.toString()} color`}
-                        onClick={() => {props.onClick(color); handleOnClickColor(`${index.toString()} color`)}}
-                    />
+                    <>
+                        <div 
+                            className="color-option" 
+                            style={{backgroundColor: color}} 
+                            key={index}
+                            id={`${index.toString()} color`}
+                            onClick={() => {
+                                if (props.onClick) props.onClick!(color); 
+                                handleOnClickColor(`${index.toString()} color`);
+                            }}
+                        />
+                    </>
                 );
             })}
         </div>

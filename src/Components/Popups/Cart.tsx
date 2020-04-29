@@ -18,7 +18,7 @@ const Cart: React.FC<CartProps> = (props) => {
                 <>
                     <p>Uh oh, looks like your cart is empty!</p>
                     <div className="total-width center">
-                        <Link onClick={props.handleClosePopup} to="/browse-catalog" className="no-text-decoration">
+                        <Link onClick={props.handleClosePopup} to="/browse-catalog/women/apparel" className="no-text-decoration">
                             <Button 
                                 width={200}
                                 className="relative popup-button" 

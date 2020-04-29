@@ -65,7 +65,7 @@ const App = () => {
             <Membership onClickPopup={handleOnClickPopup} cart={cart.length} />
             <Footer />
           </Route>
-          <Route path="/browse-catalog">
+          <Route path="/browse-catalog/:demographic/:productType">
             <BrowseCatalog onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} cart={cart.length} />
             <Footer />
           </Route>

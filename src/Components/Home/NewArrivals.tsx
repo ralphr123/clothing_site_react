@@ -53,7 +53,7 @@ const NewArrivals: React.FC<NewArrivalsProps> = (props) => {
           </div>
       </div>
       <div className="full-width center">
-        <Link className="browse-catalog-button baloo-tamma unselectable center no-text-decoration" to="/browse-catalog">
+        <Link className="browse-catalog-button baloo-tamma unselectable center no-text-decoration" to="/browse-catalog/women/apparel">
           <span className="expand" >BROWSE CATALOG</span>
         </Link>
       </div>

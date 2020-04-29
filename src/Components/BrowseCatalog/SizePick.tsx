@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 interface SizePickProps {
-    onClick: (size: string) => void;
+    lineBreak?: boolean;
+    onClick?: (size: string) => void;
 }
 
 const SizePick: React.FC<SizePickProps> = (props) => {
@@ -15,17 +16,22 @@ const SizePick: React.FC<SizePickProps> = (props) => {
     }
 
     return (
-        <div className="center margin-bottom">
+        <div className={`center ${props.lineBreak ? "craig wrap" : "margin-bottom"}`}>
             {sizes.map((size, index) => {
                 return (
-                    <div 
-                        className="size-option center unselectable" 
-                        key={index}
-                        id={`${index.toString()} size`}
-                        onClick={() => {props.onClick(size); handleOnClickSize(`${index.toString()} size`)}}
-                    >
-                        {size}
-                    </div>
+                    <>
+                        <div 
+                            className="size-option center unselectable" 
+                            key={index}
+                            id={`${index.toString()} size`}
+                            onClick={() => {
+                                if (props.onClick) props.onClick!(size); 
+                                handleOnClickSize(`${index.toString()} size`);
+                            }}
+                        >
+                            {size}
+                        </div>
+                    </>
                 );
             })}
         </div>

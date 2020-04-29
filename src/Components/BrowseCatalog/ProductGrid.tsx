@@ -1,5 +1,6 @@
 import React from 'react';
 import Products from '../../Data/Products.json';
+import { useParams } from 'react-router-dom';
 
 // Components
 import Product from '../Product';
@@ -9,14 +10,18 @@ interface ProductGridProps {
 }
 
 const ProductGrid: React.FC<ProductGridProps> = (props) => {
+    let { demographic, productType } = useParams();
+
     return (
         <div className="product-grid">
             <div className="product-grid-title" >
-                <p>WOMEN'S CLOTHING | LUDVIG</p>
+                <p className="uppercase">{demographic}'S {productType} | LUDVIG</p>
                 <span>This site is a demo, these are not for sale. All clothing and images belong to Guess.</span>
             </div>
             <div className="wrap flex mobile-center">
-                {Products.map((product, index) => {
+                {Products.filter(product => {
+                    return (product.demographic === demographic && product.productType === productType);
+                }).map((product, index) => {
                     return (
                         <Product 
                             description={product.description}

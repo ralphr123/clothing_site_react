@@ -60,6 +60,10 @@ html {
   cursor: pointer;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .flex {
   display: flex;
 }
@@ -275,7 +279,6 @@ html {
 
 .change-language-container:hover {
   cursor: pointer;
-  /* background:#696969; */
 }
 
 .language-image {
@@ -1100,7 +1103,47 @@ html {
 
 .expand-more {
   color: #6b6868;
-  font-size: 17.5px !important;
+  font-size: 12.5px !important;
+}
+
+.display-none {
+  opacity: 0;
+  /* display: none; */
+  position: absolute;
+  z-index: -1;
+}
+
+.display-show {
+  opacity: 1 !important;
+  z-index: 1;
+  transition-duration: 0.3s;
+}
+
+.margin-show {
+  margin-bottom: 35px;
+  transition-duration: 0.3s;
+}
+
+.margin-show-biggie {
+  margin-bottom: 85px;
+  transition-duration: 0.3s;
+}
+
+.craig {
+  max-width: 160px;
+}
+
+.craig div {
+  margin: 4px !important;
+}
+
+#filterc4 {
+  margin-left: 10px;
+}
+
+#filterc4 span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Catalog Navbar */
