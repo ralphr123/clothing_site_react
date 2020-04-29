@@ -15,7 +15,7 @@ import Particles from 'react-particles-js';
 
 interface HomeProps {
     onClickPopup: (option: string) => void;
-    onClickAddToCart: (src: string, description: string) => void;
+    onClickAddToCart: (src: string, description: string, price: number) => void;
     cart: number;
 }
 

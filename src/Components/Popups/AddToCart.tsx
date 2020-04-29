@@ -13,6 +13,7 @@ import RemoveIcon from '@material-ui/icons/Remove';
 interface AddToCartProps {
     src?: string;
     name?: string;
+    price?: number;
     onClick: (color: string, size: string, quantity: string) => void;
 }
 
@@ -67,11 +68,14 @@ const AddToCart: React.FC<AddToCartProps> = (props) => {
         <div className="add-to-cart wrap center">
             <img 
                 src={props.src} 
-                alt="rando" 
+                alt="product chosen" 
                 id="product-image"
             />
             <div className="center-text total-height baloo-tamma" >
-                <p id="product-title">{props.name}</p>
+                <div style={{ lineHeight: 0.1 }}>
+                    <p id="product-title">{props.name}</p>
+                    <p id="product-subtitle">$ {props.price} CAD</p>
+                </div>
                 <p>Color</p>
                 <ColorPick onClick={handleOnClickColor}/>
                 <p>Size</p>

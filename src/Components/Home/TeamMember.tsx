@@ -22,8 +22,8 @@ const TeamMember: React.FC<TeamMemberProps> = (props) => {
                 <div className="team-member-description">
                     <span>{props.description}</span><br/>
                 </div>
-                <div onClick={() => props.onClick} className="team-member-link center-vertical">                        
-                    <span className="unselectable">More</span>
+                <div style={{ paddingLeft: 5 }}>                        
+                    <span className="text-link unselectable" onClick={() => props.onClick}>More</span>
                 </div>
             </div>
         </div>

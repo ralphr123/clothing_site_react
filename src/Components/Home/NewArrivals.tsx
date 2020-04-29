@@ -5,7 +5,7 @@ import Product from '../Product';
 import { Link } from 'react-router-dom';
 
 interface NewArrivalsProps {
-  onClickAddToCart: (src: string, description: string) => void;
+  onClickAddToCart: (src: string, description: string, price: number) => void;
 }
 
 const NewArrivals: React.FC<NewArrivalsProps> = (props) => {
@@ -21,7 +21,7 @@ const NewArrivals: React.FC<NewArrivalsProps> = (props) => {
               widthCont="25%"
               widthImage="80%"
               widthButton={250}
-              onClick={() => props.onClickAddToCart('https://i.ibb.co/9cCGLZK/1583374187192648779-removebg-preview.png', 'Applique Long Cargo Jogger Pants')}
+              onClick={() => props.onClickAddToCart('https://i.ibb.co/9cCGLZK/1583374187192648779-removebg-preview.png', 'Applique Long Cargo Jogger Pants', 39.99)}
             />
             <Product 
               src="https://i.ibb.co/NF7Jb56/1575000934357465739-removebg-preview.png"
@@ -30,7 +30,7 @@ const NewArrivals: React.FC<NewArrivalsProps> = (props) => {
               widthCont="25%"
               widthImage="80%"
               widthButton={250}
-              onClick={() => props.onClickAddToCart('https://i.ibb.co/NF7Jb56/1575000934357465739-removebg-preview.png', 'Ribbed Hem Zip Fluffy Teddy Jacket')}
+              onClick={() => props.onClickAddToCart('https://i.ibb.co/NF7Jb56/1575000934357465739-removebg-preview.png', 'Ribbed Hem Zip Fluffy Teddy Jacket', 69.99)}
             />
             <Product 
               src="https://i.ibb.co/7yNDCN0/1574039264620218557-removebg-preview.png"
@@ -39,7 +39,7 @@ const NewArrivals: React.FC<NewArrivalsProps> = (props) => {
               widthCont="25%"
               widthImage="80%"
               widthButton={250}
-              onClick={() => props.onClickAddToCart('https://i.ibb.co/7yNDCN0/1574039264620218557-removebg-preview.png', 'Faux Shearling Suede Waistcoat')}
+              onClick={() => props.onClickAddToCart('https://i.ibb.co/7yNDCN0/1574039264620218557-removebg-preview.png', 'Faux Shearling Suede Waistcoat', 89.99)}
             />
             <Product 
               src="https://i.ibb.co/vq4KrCN/1562035473987026250-removebg-preview.png"
@@ -48,7 +48,7 @@ const NewArrivals: React.FC<NewArrivalsProps> = (props) => {
               widthCont="25%"
               widthImage="80%"
               widthButton={250}
-              onClick={() => props.onClickAddToCart('https://i.ibb.co/vq4KrCN/1562035473987026250-removebg-preview.png', 'Contrast Trim Cami And Shorts Set')}
+              onClick={() => props.onClickAddToCart('https://i.ibb.co/vq4KrCN/1562035473987026250-removebg-preview.png', 'Contrast Trim Cami And Shorts Set', 29.99)}
             />
           </div>
       </div>

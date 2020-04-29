@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 import Product from '../Product';
 
 interface ProductGridProps {
-    onClickAddToCart: (src: string, description: string) => void;
+    onClickAddToCart: (src: string, description: string, price: number) => void;
 }
 
 const ProductGrid: React.FC<ProductGridProps> = (props) => {
@@ -16,7 +16,7 @@ const ProductGrid: React.FC<ProductGridProps> = (props) => {
         <div className="product-grid">
             <div className="product-grid-title" >
                 <p className="uppercase">{demographic}'S {productType} | LUDVIG</p>
-                <span>This site is a demo, these are not for sale. All clothing and images belong to Guess.</span>
+                <span>This site is a non-public demo, these are not for sale. All clothing and images belong to Guess.</span>
             </div>
             <div className="wrap flex mobile-center">
                 {Products.filter(product => {
@@ -33,7 +33,7 @@ const ProductGrid: React.FC<ProductGridProps> = (props) => {
                             contClass={product.contClass}
                             contId={product.contId}
                             key={index}
-                            onClick={() => props.onClickAddToCart(product.src, product.description)}
+                            onClick={() => props.onClickAddToCart(product.src, product.description, product.price)}
                         />
                     )
                 })}

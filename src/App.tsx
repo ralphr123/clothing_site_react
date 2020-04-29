@@ -17,7 +17,7 @@ import FadeIn from 'react-fade-in';
 const App = () => {
   const [isOpenPopup, setIsOpenPopup] = useState<boolean>(false);
   const [option, setOption] = useState<string>('')
-  const [productData, setProductData] = useState<{src: string, description: string}>({src: '', description: ''});
+  const [productData, setProductData] = useState<{src: string, description: string, price: number}>({src: '', description: '', price: 0});
   const [cart, setCart] = useState<{src: string, description: string, color: string, size: string, qty: string}[]>([])
 
   const handleOnClickPopup = (optionText: string): void => {
@@ -37,9 +37,9 @@ const App = () => {
     setOption('signup');
   }
 
-  const handleOnClickAddToCart = (srcText: string, descriptionText: string): void => {
+  const handleOnClickAddToCart = (srcText: string, descriptionText: string, priceNumber: number): void => {
     handleOnClickPopup('addtocart');
-    setProductData({src: srcText, description: descriptionText});
+    setProductData({src: srcText, description: descriptionText, price: priceNumber});
   }
 
   const handleAddToCart = (colorText: string, sizeText: string, quantityText: string): void => {
@@ -89,7 +89,7 @@ const App = () => {
           <CloseIcon id="popup-close" onClick={handleOnClosePopup} />
           {(option === 'signup') ? <FadeIn><SignUp onClickLogin={handleOnClickLogin} /></FadeIn> : null}
           {(option === 'login') ? <FadeIn><Login onClickSignUp={handleOnClickSignUp} /></FadeIn> : null}
-          {(option === 'addtocart') ? <FadeIn><AddToCart src={productData.src} name={productData.description} onClick={handleAddToCart} /></FadeIn> : null}
+          {(option === 'addtocart') ? <FadeIn><AddToCart src={productData.src} name={productData.description} price={productData.price} onClick={handleAddToCart} /></FadeIn> : null}
           {(option === 'cart') ? <FadeIn><Cart handleClosePopup={handleOnClosePopup} cart={cart} /></FadeIn> : null}
         </Dialog>
       </div>

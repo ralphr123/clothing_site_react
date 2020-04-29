@@ -7,7 +7,7 @@ import { ProductGrid, SideMenu, CatalogNavbar } from '../Components/BrowseCatalo
 
 interface BrowseCatalogProps {
     onClickPopup: (option: string) => void;
-    onClickAddToCart: (src: string, description: string) => void;
+    onClickAddToCart: (src: string, description: string, price: number) => void;
     cart: number;
 }
 
