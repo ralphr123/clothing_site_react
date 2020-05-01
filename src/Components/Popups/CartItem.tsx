@@ -10,7 +10,7 @@ interface CartItemProps {
 
 const CartItem: React.FC<CartItemProps> = (props) => {
     return (
-        <div className="cart-item-container center-horizontal margin-bottom">
+        <div className="cart-item-container center-vertical">
             <img src={props.src} className="cart-item-image" alt="cart item" />
             <div className="cart-info-container">
                 <p className="cart-item-title">{props.description}</p>

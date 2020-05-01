@@ -1380,7 +1380,8 @@ html {
 .cart-item-container {
   border-bottom: 1.1px solid #ccc;
   border-top: 1.1px solid #ccc;
-  padding: 8px 0 8px 0;
+  padding: 9px 0 9px 0;
+  margin-bottom: 20px;
 }
 
 #not-found {
