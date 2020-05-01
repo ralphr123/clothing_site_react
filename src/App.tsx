@@ -73,10 +73,10 @@ const App = () => {
             <Home onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} cart={cart.length} />
             <Footer />
           </Route>
-          {/* <Route path="index.html">
-            <Redirect exact to="/" />
+          <Route path="/">
+            <Redirect exact to="/home" />
           </Route>
-          <Route path="*">
+          {/* <Route path="*">
             <NotFound onClickPopup={handleOnClickPopup} cart={cart.length} />
             <Footer />
           </Route> */}
