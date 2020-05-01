@@ -23,10 +23,10 @@ const SizePick: React.FC<SizePickProps> = (props) => {
                         <div 
                             className="size-option center unselectable" 
                             key={index}
-                            id={`${index.toString()} size`}
+                            id={`${index.toString()} size${props.lineBreak ? "filter" : ""}`}
                             onClick={() => {
                                 if (props.onClick) props.onClick!(size); 
-                                handleOnClickSize(`${index.toString()} size`);
+                                handleOnClickSize(`${index.toString()} size${props.lineBreak ? "filter" : ""}`);
                             }}
                         >
                             {size}
