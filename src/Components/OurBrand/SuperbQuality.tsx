@@ -24,7 +24,7 @@ const SuperbQuality = () => {
                             <p className="our-brand-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                         
-                        <Link className="superb-quality-button no-text-decoration" to="/">
+                        <Link className="superb-quality-button no-text-decoration" to="/browse-catalog/women/apparel">
                             <div className="browse-catalog-button baloo-tamma center">
                                 <span className="expand" >BROWSE CATALOG</span>
                             </div>

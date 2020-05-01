@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         <div style={{ width: '100vw', position: 'relative' }}>
             <div className="navbar-container full-width unselectable">
                 <div className={`navbar center ${props.className} full-width`}>
-                    <Link className="logo-container no-text-decoration" to='/'>
+                    <Link className="logo-container no-text-decoration" to="/home">
                         <span className="logo">Ludvig</span>
                     </Link>
                     <div className="register-container center">

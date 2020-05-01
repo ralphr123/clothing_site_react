@@ -69,7 +69,7 @@ const App = () => {
             <BrowseCatalog onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} cart={cart.length} />
             <Footer />
           </Route>
-          <Route path="/">
+          <Route path="/home">
             <Home onClickPopup={handleOnClickPopup} onClickAddToCart={handleOnClickAddToCart} cart={cart.length} />
             <Footer />
           </Route>
