@@ -10,7 +10,7 @@ import Footer from './Components/Footer';
 import CloseIcon from '@material-ui/icons/Close';
 
 // Components
-import { SignUp, Login, AddToCart, Cart } from './Components/Popups';
+import { SignUp, Login, AddToCart, Cart, About } from './Components/Popups';
 import Dialog from '@material-ui/core/Dialog';
 import FadeIn from 'react-fade-in';
 
@@ -91,6 +91,7 @@ const App = () => {
           {(option === 'login') ? <FadeIn><Login onClickSignUp={handleOnClickSignUp} /></FadeIn> : null}
           {(option === 'addtocart') ? <FadeIn><AddToCart src={productData.src} name={productData.description} price={productData.price} onClick={handleAddToCart} /></FadeIn> : null}
           {(option === 'cart') ? <FadeIn><Cart handleClosePopup={handleOnClosePopup} cart={cart} /></FadeIn> : null}
+          {(option === 'about') ? <FadeIn><About /></FadeIn> : null}
         </Dialog>
       </div>
     </Router>

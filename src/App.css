@@ -351,13 +351,58 @@ html {
 
 .search-icon {
   cursor: pointer;
+  margin-right: 10px;
   z-index: 999;
 }
 
-.cart-icon {
+.github-icon {
   cursor: pointer;
-  font-size: 17.5px !important;
-  margin-right: 5px;
+  font-size: 23px !important;
+  z-index: 999;
+}
+
+.github-icon:hover, .search-icon:hover {
+  color: rgb(221, 221, 221);
+}
+
+.large-github-icon {
+  cursor: pointer;
+  font-size: 100px !important;
+}
+
+.large-resume-icon {
+  cursor: pointer;
+  font-size: 105px !important;
+}
+
+.about {
+  padding: 40px;
+}
+.about-item {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+#my-desc {
+  line-height: 7.5px;
+}
+
+#site-designed-by {
+  font-size: 17.5px;
+  color: black;
+}
+
+#call {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+}
+
+#division-span {
+  font-size: 19px;
+}
+
+#line-break {
+  display: none;
 }
 
 /* Sidebar */
@@ -387,7 +432,7 @@ html {
 }
 
 .list-item:hover {
-  font-size: calc(2.45em + 2.45vw);
+  font-size: calc(2.4em + 2.4vw);
   color: #ff0066;
 }
 
@@ -1216,6 +1261,15 @@ html {
   }
   #filterc4 {
     margin-left: 0 !important;
+  }
+  #division-span {
+    display: none !important;
+  }
+  #line-break {
+    display: inline !important;
+  }
+  #site-designed-by, #call {
+    line-height: 20px;
   }
 }
 

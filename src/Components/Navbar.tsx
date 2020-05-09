@@ -2,6 +2,7 @@ import React from 'react';
 
 // Icons
 import SearchIcon from '@material-ui/icons/Search';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 //Components
 import { Link } from 'react-router-dom';
@@ -32,6 +33,13 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                     </div>
                     <div className="register-container center">
                         <SearchIcon fontSize="default" color="inherit" className="search-icon" />
+                        <a 
+                            target="_blank" 
+                            className="no-text-decoration" 
+                            href="https://github.com/ralphr123/project4_clothing_site_react"
+                        >
+                            <GitHubIcon color="inherit" className="github-icon" />
+                        </a>
                     </div>
                 </div>
             </div>

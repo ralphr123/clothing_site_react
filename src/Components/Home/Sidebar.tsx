@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 interface SideBarProps {
     className?: string;
+    onClickPopup: (option: string) => void;
 }
 
 const SideBar: React.FC<SideBarProps> = (props) => {
@@ -19,7 +20,7 @@ const SideBar: React.FC<SideBarProps> = (props) => {
             <Link className="no-text-decoration" to="/our-brand">
                 <span className="list-item">Our Brand</span>
             </Link>
-            <span className="list-item">About</span>
+            <span className="list-item" onClick={() => props.onClickPopup("about")}>About</span>
         </div>
     )
 }

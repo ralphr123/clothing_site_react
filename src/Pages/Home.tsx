@@ -56,7 +56,7 @@ const Home: React.FC<HomeProps> = (props) => {
                     <div className="full-page">
                         {currentScrollHeight < 250 ? (<ImageMain style={{ opacity }} />) : null}
                         <Particles className="black particles" params={(new Bubbles()).params} />
-                        {currentScrollHeight < window.screen.height*0.5 ? (<SideBar className="sidebar"/>) : null}
+                        {currentScrollHeight < window.screen.height*0.5 ? (<SideBar onClickPopup={props.onClickPopup} className="sidebar"/>) : null}
                         <div id="scroll-container" style={{ opacity }}>
                             <MouseOutlinedIcon id="scroll" className="absolute" />
                             <span id="scroll-text" className="absolute baloo-tamma">scroll</span>
