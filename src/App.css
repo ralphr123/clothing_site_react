@@ -361,8 +361,8 @@ html {
   z-index: 999;
 }
 
-.github-icon:hover, .search-icon:hover {
-  color: rgb(221, 221, 221);
+.white .github-icon:hover, .white .search-icon:hover {
+  color: rgb(204, 204, 204);
 }
 
 .large-github-icon {
