@@ -24,31 +24,31 @@ const NewArrivals: React.FC<NewArrivalsProps> = (props) => {
               onClick={() => props.onClickAddToCart('https://i.ibb.co/9cCGLZK/1583374187192648779-removebg-preview.png', 'Applique Long Cargo Jogger Pants', 39.99)}
             />
             <Product 
-              src="https://i.ibb.co/NF7Jb56/1575000934357465739-removebg-preview.png"
-              description="Ribbed Hem Zip Fluffy Teddy Jacket - Aqua" 
-              price={69.99}
+              src="https://i.ibb.co/qx7KfkL/1589388731551338004-removebg-preview.png"
+              description="Dragon Print Short Sleeves Longline Tee" 
+              price={49.99}
               widthCont="25%"
               widthImage="80%"
               widthButton={250}
-              onClick={() => props.onClickAddToCart('https://i.ibb.co/NF7Jb56/1575000934357465739-removebg-preview.png', 'Ribbed Hem Zip Fluffy Teddy Jacket', 69.99)}
+              onClick={() => props.onClickAddToCart('https://i.ibb.co/qx7KfkL/1589388731551338004-removebg-preview.png', 'Dragon Print Short Sleeves Longline Tee', 49.99)}
             />
             <Product 
-              src="https://i.ibb.co/7yNDCN0/1574039264620218557-removebg-preview.png"
-              description="Faux Shearling Suede Waistcoat - Camel Brown" 
-              price={89.99}
-              widthCont="25%"
-              widthImage="80%"
-              widthButton={250}
-              onClick={() => props.onClickAddToCart('https://i.ibb.co/7yNDCN0/1574039264620218557-removebg-preview.png', 'Faux Shearling Suede Waistcoat', 89.99)}
-            />
-            <Product 
-              src="https://i.ibb.co/vq4KrCN/1562035473987026250-removebg-preview.png"
-              description="Contrast Trim Cami And Shorts Set" 
+              src="https://i.ibb.co/Xpz7Wxv/1583115763046386539-removebg-preview-1.png"
+              description="Embroidery Letter Drawstring Jogger Sweatpants" 
               price={29.99}
               widthCont="25%"
               widthImage="80%"
               widthButton={250}
-              onClick={() => props.onClickAddToCart('https://i.ibb.co/vq4KrCN/1562035473987026250-removebg-preview.png', 'Contrast Trim Cami And Shorts Set', 29.99)}
+              onClick={() => props.onClickAddToCart('https://i.ibb.co/Xpz7Wxv/1583115763046386539-removebg-preview-1.png', 'Embroidery Letter Drawstring Jogger Sweatpants', 29.99)}
+            />
+            <Product 
+              src="https://i.ibb.co/4p8dF4d/1588641727700303590-removebg-preview.png"
+              description="Palm Tree Print Beach Vacation Shirt" 
+              price={29.99}
+              widthCont="25%"
+              widthImage="80%"
+              widthButton={250}
+              onClick={() => props.onClickAddToCart('https://i.ibb.co/4p8dF4d/1588641727700303590-removebg-preview.png', 'Palm Tree Print Beach Vacation Shirt', 29.99)}
             />
           </div>
       </div>

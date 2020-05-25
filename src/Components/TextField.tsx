@@ -19,6 +19,10 @@ const TextField: React.FC<TextFieldProps> = (props) => {
             style={props.center ? {width: props.width, textAlign: 'center'} : { width: props.width }}
             value={props.value}
             onChange={(e: ChangeEvent<HTMLInputElement>) => props.onChange(e)}
+            autoComplete="off" 
+            autoCorrect="off" 
+            autoCapitalize="off" 
+            spellCheck="false"
         />
     );
 }
