@@ -19,7 +19,6 @@ const SizePick: React.FC<SizePickProps> = (props) => {
         <div className={`center ${props.lineBreak ? "craig wrap" : "margin-bottom"}`}>
             {sizes.map((size, index) => {
                 return (
-                    <>
                         <div 
                             className="size-option center unselectable" 
                             key={index}
@@ -31,7 +30,6 @@ const SizePick: React.FC<SizePickProps> = (props) => {
                         >
                             {size}
                         </div>
-                    </>
                 );
             })}
         </div>

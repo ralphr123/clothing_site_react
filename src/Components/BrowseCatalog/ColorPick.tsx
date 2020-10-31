@@ -19,7 +19,6 @@ const ColorPick: React.FC<ColorPickProps> = (props) => {
         <div className={`center ${props.lineBreak ? "craig wrap" : "margin-bottom"}`}>
             {colors.map((color, index) => {
                 return (
-                    <>
                         <div 
                             className="color-option" 
                             style={{backgroundColor: color}} 
@@ -30,7 +29,6 @@ const ColorPick: React.FC<ColorPickProps> = (props) => {
                                 handleOnClickColor(`${index.toString()} color${props.lineBreak ? "filter" : ""}`);
                             }}
                         />
-                    </>
                 );
             })}
         </div>

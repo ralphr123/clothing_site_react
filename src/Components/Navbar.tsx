@@ -34,7 +34,8 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                     <div className="register-container center">
                         <SearchIcon fontSize="default" color="inherit" className="search-icon" />
                         <a 
-                            target="_blank" 
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="no-text-decoration" 
                             href="https://github.com/ralphr123/project4_clothing_site_react"
                         >

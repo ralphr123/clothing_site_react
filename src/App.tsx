@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import './App.css';
 
 // Pages
-import { Home, OurBrand, Membership, BrowseCatalog, NotFound } from './Pages';
+import { Home, OurBrand, Membership, BrowseCatalog } from './Pages';
 import Footer from './Components/Footer';
 
 // Icons
@@ -76,10 +76,6 @@ const App = () => {
           <Route path="/">
             <Redirect exact to="/home" />
           </Route>
-          {/* <Route path="*">
-            <NotFound onClickPopup={handleOnClickPopup} cart={cart.length} />
-            <Footer />
-          </Route> */}
         </Switch>
         <Dialog 
           onClose={handleOnClosePopup} 

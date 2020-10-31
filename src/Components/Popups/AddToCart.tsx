@@ -93,7 +93,7 @@ const AddToCart: React.FC<AddToCartProps> = (props) => {
                         error={error}
                     /><AddIcon className="change-qty" onClick={handleOnClickPlus} />
                 </div>
-                {!valid ? (<p style={{ marginTop: 20, marginBottom: 0 }} className="error">Please pick a size and color!</p>) : null}
+                {!valid ? (<p style={{ marginTop: 20, marginBottom: 0 }} className="error">Please pick a size and color</p>) : null}
                 <div className="center" style={{ width: '100%' }}>
                     <Button 
                         className="relative popup-button" 

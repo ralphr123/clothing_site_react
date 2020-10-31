@@ -1,5 +1,4 @@
-import React from 'react';
-import Products from '../../Data/Products.json';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 // Components
@@ -11,6 +10,13 @@ interface ProductGridProps {
 
 const ProductGrid: React.FC<ProductGridProps> = (props) => {
     let { demographic, productType } = useParams();
+    const [productData, setProductData] = useState<{_id: string, description: string, src: string, price: number, widthCont: string, widthImage: string, widthButton: string, contClass: string, contId: string, demographic: string, productType: string}[]>([]);
+
+    useEffect(() => {
+        fetch(`https://wicked-phantom-05767.herokuapp.com/https://clothing-site-backend.herokuapp.com/${productType}`)
+            .then(res => res.json())
+            .then(data => setProductData(data));
+    }, [productType]);
 
     return (
         <div className="product-grid">
@@ -19,9 +25,7 @@ const ProductGrid: React.FC<ProductGridProps> = (props) => {
                 <span>This site is a non-public demo, these are not for sale. All clothing and images belong to Guess.</span>
             </div>
             <div className="wrap flex mobile-center">
-                {Products.filter(product => {
-                    return (product.demographic === demographic && product.productType === productType);
-                }).map((product, index) => {
+                {productData.map((product, index) => {
                     return (
                         <Product 
                             description={product.description}
