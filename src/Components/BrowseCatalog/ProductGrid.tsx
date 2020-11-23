@@ -14,18 +14,15 @@ const ProductGrid: React.FC<ProductGridProps> = (props) => {
     const [productData, setProductData] = useState<{_id: string, description: string, src: string, price: number, widthCont: string, widthImage: string, widthButton: string, contClass: string, contId: string, demographic: string, productType: string}[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
-    const loadData = async () => {
-        const response = await fetch(`https://wicked-phantom-05767.herokuapp.com/https://clothing-site-backend.herokuapp.com/${productType}`);
-        const json = await response.json();
-        setProductData(json);
-        setIsLoading(false);
-    }
-
+    
     useEffect(() => {
+        const loadData = async () => {
+            const response = await fetch(`https://wicked-phantom-05767.herokuapp.com/https://clothing-site-backend.herokuapp.com/${productType}`);
+            const json = await response.json();
+            setProductData(json);
+            setIsLoading(false);
+        }
         loadData();
-        // fetch(`https://wicked-phantom-05767.herokuapp.com/https://clothing-site-backend.herokuapp.com/${productType}`)
-        //     .then(res => res.json())
-        //     .then(data => setProductData(data));
     }, [productType]);
 
     return (
