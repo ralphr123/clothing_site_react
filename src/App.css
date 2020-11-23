@@ -1451,3 +1451,18 @@ html {
   height: 350px;
   padding-top: 12.5vh;
 }
+
+/* Loader */
+.loader {
+  height: 350px;
+  width: 100%;
+}
+
+.loader-icon {
+  color: black !important;
+}
+
+.loader-text {
+  margin-top: 15px;
+  font-size: 12.5px;
+}
