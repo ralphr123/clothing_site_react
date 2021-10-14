@@ -14,7 +14,7 @@ interface AboutProps {
 const About: React.FC<AboutProps> = (props) => {
     const handleOnClick = (option: boolean) => {
         if (option) window.open("https://github.com/ralphr123/project4_clothing_site_react",'_blank');
-        else window.open("https://drive.google.com/file/d/1Sn2Dn6_wZ0JCTcACxmCwODR3npRRArHO/view?usp=sharing");
+        else window.open("https://drive.google.com/file/d/1DP5xj8OI7W1-vQcYZccaPciRjX6n2mwa/view");
     }
     return (
         <div className="about center-text">
