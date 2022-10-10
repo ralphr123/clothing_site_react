@@ -1,5 +1,7 @@
-This is a personal project where I tested and improve my skills in front-end React and TypeScript development. I also used Adobe Photoshop to edit and format some of the images and diagrams. 
+This is the frontend of a personal project where I tested and improve my skills in full-stack development. I used React, TypeScript, Node.js, and MongoDB. I also used Adobe Photoshop to edit and format some of the images and diagrams. 
 It took around a month to complete. I deployed it using netlify: https://sleepy-euclid-452e08.netlify.app/home
+
+Backend: https://github.com/ralphr123/clothing_site_api
 
 I've learned a lot over the course of the project and over the 2 years since then. If I were to redo this project today, here's a few things I would change:
 * Use a state manager like Redux to manage site-wide data like the cart, rather than relying on the React state and prop-tunneling. This would reduce complexity and improve maintainability. 
