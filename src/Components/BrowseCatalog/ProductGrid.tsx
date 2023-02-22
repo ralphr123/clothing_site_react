@@ -17,7 +17,7 @@ const ProductGrid: React.FC<ProductGridProps> = (props) => {
     
     useEffect(() => {
         const loadData = async () => {
-            const response = await fetch(`https://wicked-phantom-05767.herokuapp.com/https://clothing-site-backend.herokuapp.com/${productType}`);
+            const response = await fetch(`https://clothing-site-backend.herokuapp.com/${productType}`);
             const json = await response.json();
             setProductData(json);
             setIsLoading(false);
